@@ -1,9 +1,10 @@
 import './App.css';
+import Pokedex from './components/Pokedex/Pokedex';
 
 function App() {
   return (
     <div className="App">
-      App
+      <Pokedex></Pokedex>
     </div>
   );
 }
