@@ -355,7 +355,7 @@ export default function PokemonDisplay() {
 			</>)
 			break;
 		default:
-			displayJSX = <p className='text-center text-warning'>Loading...</p>
+			displayJSX = <p className='text-center text-error'>ERROR</p>
 			break;
 	}
 
