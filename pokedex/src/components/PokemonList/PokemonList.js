@@ -3,11 +3,10 @@ import axios from 'axios';
 
 import './PokemonList.css'
 
-import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import PokemonListCard from '../PokemonListCard/PokemonListCard';
+import PokemonDisplay from '../PokemonDisplay/PokemonDisplay';
 
 
 export default function PokemonList() {
@@ -15,6 +14,7 @@ export default function PokemonList() {
 
 	const [pokemonData, setPokemonData] = useState([]);
 	const [pokemonURL, setPokemonURL] = useState(POKEAPI_URL + "pokemon");
+	const [selectedPokemon, setSelectedPokemon] = useState(null);
 
 
 	const addPokemonData = (pokemon) => {
@@ -44,13 +44,13 @@ export default function PokemonList() {
 		getPokemonData()
 	}, [])
 
-	const logPoke = () => {
-		console.log(pokemonData)
-	}
-
   const selectPokemon = (pokemon) => {
-    console.log(pokemon)
+    setSelectedPokemon(pokemon)
   }
+
+	if(selectedPokemon!==null) {
+		return <PokemonDisplay pokemon={selectedPokemon}></PokemonDisplay>
+	}
 
 	return (
 		<Container fluid className="overflow-scroll">
