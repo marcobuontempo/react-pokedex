@@ -50,12 +50,13 @@ export default function PokemonList() {
 
 	return (
 		<>
-			{selectedPokemon ? <PokemonDisplay pokemon={selectedPokemon} selectPokemon={selectPokemon}></PokemonDisplay> : null}
 			<Container fluid className="overflow-scroll">
 				<Row className='justify-content-center gap-2'>
 					{pokemonData.map(pokemon => <PokemonListCard key={pokemon.id} pokemon={pokemon} selectPokemon={selectPokemon}></PokemonListCard>)}
 				</Row>
 			</Container>
+
+			{selectedPokemon ? <PokemonDisplay pokemon={selectedPokemon} selectPokemon={selectPokemon}></PokemonDisplay> : null}
 		</>
 	)
 }

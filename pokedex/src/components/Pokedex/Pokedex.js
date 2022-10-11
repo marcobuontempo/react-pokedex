@@ -22,14 +22,15 @@ export default function Pokedex() {
    * 11. Add About section
    * 12. Separate styling into .css sheets
    * 13. Extract API calls into helper function at /helpers/api.js
+   * 15. Only set pokemonData after pokemon from list have been added
    * 14. Refactor code
    */
 
 
   return (
     <Stack className='Pokedex'>
-        <NavBar></NavBar>
-        <PokemonList></PokemonList>
+      <NavBar></NavBar>
+      <PokemonList></PokemonList>
     </Stack>
   )
 }
