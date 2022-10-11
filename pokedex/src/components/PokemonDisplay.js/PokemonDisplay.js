@@ -1,12 +1,64 @@
 import React from 'react'
 import { useState } from 'react'
 
+import './PokemonDisplay.css'
+import Card from 'react-bootstrap/Card';
+import ListGroup from 'react-bootstrap/ListGroup';
+import Nav from 'react-bootstrap/Nav';
+import Stack from 'react-bootstrap/Stack';
+
+
 export default function PokemonDisplay() {
 
 	const [displayType, setDisplayType] = useState("overview")
 
-	const changeDisplay = (e) => {
-		setDisplayType(e.target.value)
+	const changeDisplay = (key) => {
+		setDisplayType(key)
+	}
+
+	const navItems = ["Overview", "Stats", "Moves", "Physical"]
+	const getNavbar = (navItems) => {
+		return (
+			<Nav variant="tabs" defaultActiveKey={navItems[0].toLowerCase()} onSelect={changeDisplay}>
+				{ navItems.map(e => <Nav.Item key={e.toLowerCase()}><Nav.Link as="button" href={e.toLowerCase()}>{e}</Nav.Link></Nav.Item>)}
+			</Nav>
+		)
+	}
+
+	const getDisplayContent = (displayType) => {
+		switch (displayType) {
+			case "overview":
+				return (<>
+					<ListGroup>
+						<ListGroup.Item className='fw-bold'>Type:</ListGroup.Item>
+						{pokemonType.map(e => <ListGroup.Item key={e.type.name}>{e.type.name}</ListGroup.Item>)}
+					</ListGroup>
+					<ListGroup>
+						<ListGroup.Item className='fw-bold'>Abilities:</ListGroup.Item>
+						{pokemonAbilities.map(e => <ListGroup.Item key={e.ability.name}>{e.ability.name}</ListGroup.Item>)}
+					</ListGroup>
+				</>)
+			case "stats":
+				return (
+					<ListGroup>
+						{pokemonStats.map(e => <ListGroup.Item className='fw-bold' key={e.stat.name}>{e.stat.name.replace("-", " ").toUpperCase()}: <span className='fw-normal'>{e.base_stat}</span></ListGroup.Item>)}
+					</ListGroup>
+				)
+			case "moves":
+				return (
+					<ListGroup>
+						<li className="list-group-item fw-bold">Moves:</li>
+						{pokemonMoves.map(e => <ListGroup.Item className="fw-bold" key={e.move.name}><span className='fw-normal'>{e.move.name}</span></ListGroup.Item>)}
+					</ListGroup>)
+			case "physical":
+				return (
+					<ListGroup>
+						<ListGroup.Item className="fw-bold">Height: <span className="fw-normal">{pokemonHeight} metres</span></ListGroup.Item>
+						<ListGroup.Item className="fw-bold">Weight: <span className="fw-normal">{pokemonWeight} kilograms</span></ListGroup.Item>
+					</ListGroup>)
+			default:
+				return <p className='text-center text-error'>ERROR</p>
+		}
 	}
 
 	const imgurl = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
@@ -322,69 +374,20 @@ export default function PokemonDisplay() {
 	]
 
 
-
-	let displayJSX;
-	switch (displayType) {
-		case "overview":
-			displayJSX = (<>
-				<ul className='list-group py-2'>
-					<li className="list-group-item fw-bold">Type:</li>
-					{pokemonType.map(e => <li className="list-group-item" key={e.type.name}>{e.type.name}</li>)}
-				</ul>
-				<ul className='list-group py-2'>
-					<li className="list-group-item fw-bold">Abilities:</li>
-					{pokemonAbilities.map(e => <li className="list-group-item" key={e.ability.name}>{e.ability.name}</li>)}
-				</ul>
-			</>)
-			break;
-		case "stats":
-			displayJSX = (<>
-				{pokemonStats.map(e => <li className="list-group-item fw-bold" key={e.stat.name}>{e.stat.name.replace("-", " ").toUpperCase()}: <span className='fw-normal'>{e.base_stat}</span></li>)}
-			</>)
-			break;
-		case "moves":
-			displayJSX = (<>
-				<li className="list-group-item fw-bold">Moves:</li>
-				{pokemonMoves.map(e => <li className="list-group-item fw-bold" key={e.move.name}><span className='fw-normal'>{e.move.name}</span></li>)}
-			</>)
-			break;
-		case "physical":
-			displayJSX = (<>
-				<li className="list-group-item fw-bold">Height: <span className="fw-normal">{pokemonHeight} metres</span></li>
-				<li className="list-group-item fw-bold">Weight: <span className="fw-normal">{pokemonWeight} kilograms</span></li>
-			</>)
-			break;
-		default:
-			displayJSX = <p className='text-center text-error'>ERROR</p>
-			break;
-	}
-
 	return (
-		<div className='card bg-light' style={{ width: "100%" }}>
-			<h1 className="card-title text-center">{pokemonName}</h1>
-			<img src={imgurl} alt="POKEMON NAME" style={{maxHeight: "50%", objectFit: "contain"}}/>
-			<div className="card-body overflow-scroll">
-				<ul className="list-group list-group-flush">
-					{displayJSX}
-				</ul>
-			</div>
+		<Card bg='light' className='PokemonDisplay'>
+			<Card.Title as='h1' className="text-center">{pokemonName}</Card.Title>
+			<Card.Img variant="top" src={imgurl} style={{ maxHeight: "30%", objectFit: "contain" }} />
 
-			<div className="card-footer">
-				<ul className="nav nav-tabs card-header-tabs">
-					<li className="nav-item">
-						<button className={"nav-link " + (displayType === "overview" ? "active" : "")} aria-current={displayType === "overview" ? "true" : "false"} value="overview" onClick={changeDisplay}>Overview</button>
-					</li>
-					<li className="nav-item">
-						<button className={"nav-link " + (displayType === "stats" ? "active" : "")} aria-current={displayType === "stats" ? "true" : "false"} value="stats" onClick={changeDisplay}>Stats</button>
-					</li>
-					<li className="nav-item">
-						<button className={"nav-link " + (displayType === "moves" ? "active" : "")} aria-current={displayType === "moves" ? "true" : "false"} value="moves" onClick={changeDisplay}>Moves</button>
-					</li>
-					<li className="nav-item">
-						<button className={"nav-link " + (displayType === "physical" ? "active" : "")} aria-current={displayType === "physical" ? "true" : "false"} value="physical" onClick={changeDisplay}>Physical</button>
-					</li>
-				</ul>
-			</div>
-		</div>
+			<Card.Body className='overflow-scroll'>
+				<Stack gap={3}>
+					{getDisplayContent(displayType)}
+				</Stack>
+			</Card.Body>
+
+			<Card.Footer>
+				{getNavbar(navItems)}
+			</Card.Footer>
+		</Card >
 	)
 }
