@@ -12,7 +12,7 @@ export default function NavBar() {
 	const expand = 'xxl'
 
 	return (
-		<Navbar bg="light" expand={expand} className="mb-3">
+		<Navbar bg="light" expand={expand}>
 			<Container fluid>
 				<Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
 				<Navbar.Offcanvas
