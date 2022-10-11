@@ -1,5 +1,5 @@
 import './Pokedex.css'
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import PokemonList from '../PokemonList/PokemonList';
 
 import Stack from 'react-bootstrap/Stack';
@@ -14,12 +14,15 @@ export default function Pokedex() {
    * DONE 3. Populate menu with each pokemon.name
    * DONE 4. Onclick menu, show the details of the selected Pokemon
    * 5. Fix PokemonDisplay to only be 100% height and not require extra scrolling
-   * 6. Add backbutton for PokemonDisplay to go back to Pokemon list
+   * DONE 6. Add backbutton for PokemonDisplay to go back to Pokemon list
    * 7. Link the menu and display components
    * 8. Lazy load the other Pokemon list
    * 9. Add Spinners while waiting for loading
    * 10. Add styling to components. Use correct Pokemon font
    * 11. Add About section
+   * 12. Separate styling into .css sheets
+   * 13. Extract API calls into helper function at /helpers/api.js
+   * 14. Refactor code
    */
 
 

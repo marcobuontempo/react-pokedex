@@ -6,6 +6,7 @@ import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Nav from 'react-bootstrap/Nav';
 import Stack from 'react-bootstrap/Stack';
+import Button from 'react-bootstrap/Button';
 
 
 export default function PokemonDisplay(props) {
@@ -13,6 +14,10 @@ export default function PokemonDisplay(props) {
 	const pokemon = props.pokemon
 
 	const [displayType, setDisplayType] = useState("overview")
+
+	const goBack = () => {
+		props.selectPokemon(null)
+	}
 
 	const changeDisplay = (key) => {
 		setDisplayType(key)
@@ -22,7 +27,7 @@ export default function PokemonDisplay(props) {
 	const getNavbar = (navItems) => {
 		return (
 			<Nav variant="tabs" defaultActiveKey={navItems[0].toLowerCase()} onSelect={changeDisplay}>
-				{ navItems.map(e => <Nav.Item key={e.toLowerCase()}><Nav.Link as="button" href={e.toLowerCase()}>{e}</Nav.Link></Nav.Item>)}
+				{navItems.map(e => <Nav.Item key={e.toLowerCase()}><Nav.Link as="button" href={e.toLowerCase()}>{e}</Nav.Link></Nav.Item>)}
 			</Nav>
 		)
 	}
@@ -63,9 +68,10 @@ export default function PokemonDisplay(props) {
 		}
 	}
 
-
 	return (
 		<Card bg='light' className='PokemonDisplay'>
+			<Button variant="outline-danger" size="sm" style={{width:"auto", position: 'absolute', margin: '0.5em', padding: '0.5em 1em', fontWeight: 'bold'}} onClick={goBack}>Back</Button>
+
 			<Card.Title as='h1' className="text-center">{pokemon.name}</Card.Title>
 			<Card.Img variant="top" src={pokemon.sprites.front_default} style={{ maxHeight: "30%", objectFit: "contain" }} />
 
@@ -74,6 +80,7 @@ export default function PokemonDisplay(props) {
 					{getDisplayContent(displayType)}
 				</Stack>
 			</Card.Body>
+
 			<Card.Footer>
 				{getNavbar(navItems)}
 			</Card.Footer>

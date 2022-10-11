@@ -44,19 +44,18 @@ export default function PokemonList() {
 		getPokemonData()
 	}, [])
 
-  const selectPokemon = (pokemon) => {
-    setSelectedPokemon(pokemon)
-  }
-
-	if(selectedPokemon!==null) {
-		return <PokemonDisplay pokemon={selectedPokemon}></PokemonDisplay>
+	const selectPokemon = (pokemon) => {
+		setSelectedPokemon(pokemon)
 	}
 
 	return (
-		<Container fluid className="overflow-scroll">
-			<Row className='justify-content-center gap-2'>
+		<>
+			{selectedPokemon ? <PokemonDisplay pokemon={selectedPokemon} selectPokemon={selectPokemon}></PokemonDisplay> : null}
+			<Container fluid className="overflow-scroll">
+				<Row className='justify-content-center gap-2'>
 					{pokemonData.map(pokemon => <PokemonListCard key={pokemon.id} pokemon={pokemon} selectPokemon={selectPokemon}></PokemonListCard>)}
-			</Row>
-		</Container>
+				</Row>
+			</Container>
+		</>
 	)
 }
