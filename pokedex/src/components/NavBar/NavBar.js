@@ -7,10 +7,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
 
-export default function NavBar() {
+export default function NavBar(props) {
+
+	const selectMenuItem = (key) => {
+		props.setMenuSelected(key)
+	}
 
 	const expand = 'xxl'
-
 	return (
 		<Navbar bg="light" expand={expand}>
 			<Container fluid>
@@ -26,9 +29,9 @@ export default function NavBar() {
 						</Offcanvas.Title>
 					</Offcanvas.Header>
 					<Offcanvas.Body>
-						<Nav className="justify-content-end flex-grow-1 pe-3">
-							<Nav.Link href="#action1">Pokemon</Nav.Link>
-							<Nav.Link href="#action2">About</Nav.Link>
+						<Nav className="justify-content-end flex-grow-1 pe-3" onSelect={selectMenuItem}>
+							<Nav.Item key='PokemonList'><Nav.Link as="button" href='PokemonList'>Pokemon</Nav.Link></Nav.Item>
+							<Nav.Item key='About'><Nav.Link as="button" href='About'>About</Nav.Link></Nav.Item>
 						</Nav>
 					</Offcanvas.Body>
 				</Navbar.Offcanvas>

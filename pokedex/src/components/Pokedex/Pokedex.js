@@ -1,9 +1,10 @@
 import './Pokedex.css'
-import React from 'react'
+import React, { useState } from 'react'
 import PokemonList from '../PokemonList/PokemonList';
 
 import Stack from 'react-bootstrap/Stack';
 import NavBar from '../NavBar/NavBar';
+import About from '../About/About';
 
 
 export default function Pokedex() {
@@ -15,7 +16,7 @@ export default function Pokedex() {
    * DONE 4. Onclick menu, show the details of the selected Pokemon
    * DONE 5. Fix PokemonDisplay to only be 100% height and not require extra scrolling
    * DONE 6. Add backbutton for PokemonDisplay to go back to Pokemon list
-   * 7. Link the menu and display components
+   * DONE 7. Link the menu and display components
    * 8. Lazy load the other Pokemon list
    * 9. Add Spinners while waiting for loading
    * 10. Add styling to components. Use correct Pokemon font
@@ -24,13 +25,26 @@ export default function Pokedex() {
    * 13. Extract API calls into helper function at /helpers/api.js
    * 15. Only set pokemonData after pokemon from list have been added
    * 14. Refactor code
+   * 15. Minimise navbar once selected
    */
 
+  const [menuSelected, setMenuSelected] = useState(null)
+
+  const getDisplayContent = (displayType) => {
+    switch(displayType) {
+      case "PokemonList":
+        return <PokemonList></PokemonList>
+      case "About":
+        return <About></About>
+      default:
+        return
+    }
+  }
 
   return (
     <Stack className='Pokedex'>
-      <NavBar></NavBar>
-      <PokemonList></PokemonList>
+      <NavBar setMenuSelected={setMenuSelected}></NavBar>
+      {getDisplayContent(menuSelected)}
     </Stack>
   )
 }

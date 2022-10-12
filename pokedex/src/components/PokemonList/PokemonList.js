@@ -29,7 +29,7 @@ export default function PokemonList() {
 		axios
 			.get(pokemonURL)
 			.then(res => {
-				console.log(res);
+				// console.log(res);
 				return res.data;
 			})
 			.then(data => {
