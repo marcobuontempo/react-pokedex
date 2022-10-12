@@ -13,7 +13,7 @@ export default function Pokedex() {
    * DONE 2. Make basic menu design
    * DONE 3. Populate menu with each pokemon.name
    * DONE 4. Onclick menu, show the details of the selected Pokemon
-   * 5. Fix PokemonDisplay to only be 100% height and not require extra scrolling
+   * DONE 5. Fix PokemonDisplay to only be 100% height and not require extra scrolling
    * DONE 6. Add backbutton for PokemonDisplay to go back to Pokemon list
    * 7. Link the menu and display components
    * 8. Lazy load the other Pokemon list

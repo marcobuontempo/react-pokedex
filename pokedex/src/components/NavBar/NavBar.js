@@ -28,7 +28,7 @@ export default function NavBar() {
 					<Offcanvas.Body>
 						<Nav className="justify-content-end flex-grow-1 pe-3">
 							<Nav.Link href="#action1">Pokemon</Nav.Link>
-							<Nav.Link href="#action2">Link</Nav.Link>
+							<Nav.Link href="#action2">About</Nav.Link>
 						</Nav>
 					</Offcanvas.Body>
 				</Navbar.Offcanvas>
