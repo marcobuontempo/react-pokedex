@@ -28,7 +28,7 @@ export default function Pokedex() {
    * DONE 15. Only set pokemonData after pokemon from list have been added
    * 14. Refactor code
    * DONE 15. Minimise navbar once selected
-   * 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
+   * DONE 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
    * 17. Show shiny sprite on mouse hover
    */
 
