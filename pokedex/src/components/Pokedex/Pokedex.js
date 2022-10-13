@@ -24,10 +24,10 @@ export default function Pokedex() {
    * 10. Add styling to components. Use correct Pokemon font
    * 11. Add About section
    * 12. Separate styling into .css sheets
-   * 13. Extract API calls into helper function at /helpers/api.js
-   * 15. Only set pokemonData after pokemon from list have been added
+   * DONE 13. Extract API calls into helper function at /helpers/api.js
+   * DONE 15. Only set pokemonData after pokemon from list have been added
    * 14. Refactor code
-   * 15. Minimise navbar once selected
+   * DONE 15. Minimise navbar once selected
    * 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
    * 17. Show shiny sprite on mouse hover
    */

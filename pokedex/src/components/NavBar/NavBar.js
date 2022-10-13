@@ -15,7 +15,7 @@ export default function NavBar(props) {
 
 	const expand = 'xxl'
 	return (
-		<Navbar bg="light" expand={expand}>
+		<Navbar bg="light" expand={expand} collapseOnSelect={true}>
 			<Container fluid>
 				<Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
 				<Navbar.Offcanvas
