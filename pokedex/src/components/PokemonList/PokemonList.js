@@ -4,6 +4,8 @@ import './PokemonList.css'
 
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import Spinner from 'react-bootstrap/Spinner';
+
 import PokemonListCard from '../PokemonListCard/PokemonListCard';
 import PokemonDisplay from '../PokemonDisplay/PokemonDisplay';
 
@@ -35,6 +37,7 @@ export default function PokemonList() {
 	return (
 		<Container fluid className="overflow-auto PokemonList">
 			<Container className='overflow-auto' fluid style={{ height: "100%" }}>
+					{pokemonData.length===0 ? <div style={{display:"flex", height:"100%", justifyContent:"center", alignItems:"center"}}><Spinner animation="border" role="status" variant="danger"><span className="visually-hidden">Loading...</span></Spinner></div> : null}
 				<Row className='justify-content-center gap-2'>
 					{pokemonData.map(pokemon => <PokemonListCard key={pokemon.id} pokemon={pokemon} selectPokemon={selectPokemon}></PokemonListCard>)}
 				</Row>

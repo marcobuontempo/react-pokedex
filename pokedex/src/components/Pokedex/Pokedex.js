@@ -20,7 +20,7 @@ export default function Pokedex() {
    * DONE 6. Add backbutton for PokemonDisplay to go back to Pokemon list
    * DONE 7. Link the menu and display components
    * 8. Lazy load the other Pokemon list
-   * 9. Add Spinners while waiting for loading
+   * DONE 9. Add Spinners while waiting for loading
    * 10. Add styling to components. Use correct Pokemon font
    * 11. Add About section
    * 12. Separate styling into .css sheets
@@ -29,6 +29,7 @@ export default function Pokedex() {
    * 14. Refactor code
    * 15. Minimise navbar once selected
    * 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
+   * 17. Show shiny sprite on mouse hover
    */
 
   const [menuSelected, setMenuSelected] = useState(null)
