@@ -73,7 +73,7 @@ export default function PokemonDisplay(props) {
 			<Button variant="outline-danger" size="sm" style={{width:"auto", position: 'absolute', margin: '0.5em', padding: '0.5em 1em', fontWeight: 'bold'}} onClick={goBack}>Back</Button>
 
 			<Card.Title as='h1' className="text-center">{pokemon.name}</Card.Title>
-			<Card.Img variant="top" src={pokemon.sprites.front_default} style={{ maxHeight: "10%", objectFit: "contain" }} />
+			<Card.Img variant="top" src={pokemon.sprites.default} style={{ maxHeight: "10%", objectFit: "contain" }} />
 
 			<Card.Body className='overflow-scroll'>
 				<Stack gap={3}>

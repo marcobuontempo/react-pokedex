@@ -6,6 +6,8 @@ import Stack from 'react-bootstrap/Stack';
 import NavBar from '../NavBar/NavBar';
 import About from '../About/About';
 
+import * as pokeapi from '../../helpers/pokeapi.js'
+
 
 export default function Pokedex() {
 
@@ -26,6 +28,7 @@ export default function Pokedex() {
    * 15. Only set pokemonData after pokemon from list have been added
    * 14. Refactor code
    * 15. Minimise navbar once selected
+   * 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
    */
 
   const [menuSelected, setMenuSelected] = useState(null)
@@ -41,9 +44,15 @@ export default function Pokedex() {
     }
   }
 
+  const test = async () => {
+    const abc = await pokeapi.fetchAllPokemonData(pokeapi.pokemonURL)
+    console.log(abc)
+  }
+
   return (
     <Stack className='Pokedex'>
       <NavBar setMenuSelected={setMenuSelected}></NavBar>
+      <button type="button" onClick={test}>Test</button>
       {getDisplayContent(menuSelected)}
     </Stack>
   )

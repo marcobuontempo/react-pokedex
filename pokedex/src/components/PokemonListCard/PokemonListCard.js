@@ -22,7 +22,7 @@ export default function PokemonListCard(props) {
         <Container>
           <Row>
             <Col>
-              <Card.Img src={pokemon.sprites.front_default} style={{ height: '100%', width: 'auto' }}></Card.Img>
+              <Card.Img src={pokemon.sprites.default} style={{ height: '100%', width: 'auto' }}></Card.Img>
             </Col>
             <Col>
               <Card.Text className='fw-bold'>
