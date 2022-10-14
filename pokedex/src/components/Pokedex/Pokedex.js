@@ -37,7 +37,7 @@ export default function Pokedex() {
    * DONE 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
    * DONE 17. Show shiny sprite on mouse hover
    * DONE 18. Use correct Pokemon font
-   * 19. Capitalise the Pokemon names when storing data
+   * 19. Capitalise the Pokemon names, moves, abilities when storing data. Remove any '-'
    * 20. Navbar brand navigates to home page
    * 21. Create home page 
    * 22. Take only necessary information from API (e.g. moves -> only need moves.name)
