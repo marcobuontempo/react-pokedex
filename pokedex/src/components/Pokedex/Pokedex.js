@@ -24,7 +24,7 @@ export default function Pokedex() {
    * DONE 9. Add Spinners while waiting for loading
    * 10. Add styling to components
    *     - DONE Padding around divs
-   *     - Nav Menu buttons
+   *     - DONE Nav Menu buttons
    *     - Text display on cards
    *     - Hover animation (scale/glow) on cards
    *     - Custom scroll bars
@@ -42,6 +42,7 @@ export default function Pokedex() {
    * 21. Create home page 
    * 22. Take only necessary information from API (e.g. moves -> only need moves.name)
    * 23. Convert custom CSS to bootstrap (height: 100% -> h-100)
+   * 24. Logo: combine React and Pokeball
    */
 
   const [menuSelected, setMenuSelected] = useState(null)
