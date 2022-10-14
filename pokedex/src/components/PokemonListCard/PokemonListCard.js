@@ -25,7 +25,7 @@ export default function PokemonListCard(props) {
               <Card.Img src={pokemon.sprites.default} className="PokemonListCard-img"></Card.Img>
             </Col>
             <Col>
-              <Card.Text className='fw-bold'>
+              <Card.Text className='PokemonListCard-text fw-bold fs-4'>
                 {pokemon.name}
               </Card.Text>
             </Col>

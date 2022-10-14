@@ -25,7 +25,7 @@ export default function Pokedex() {
    * 10. Add styling to components
    *     - DONE Padding around divs
    *     - DONE Nav Menu buttons
-   *     - Text display on cards
+   *     - DONE Text display on cards
    *     - Hover animation (scale/glow) on cards
    *     - Custom scroll bars
    * 11. Add About section

@@ -1,12 +1,38 @@
 .PokemonListCard {
     max-width: 350px;
+    cursor: pointer;
 }
 
 .PokemonListCard-header {
     background: rgba(0,0,0,0.25);
+    text-shadow: 0 0 0.2em white;
 }
 
 .PokemonListCard-img {
     height: 100%;
     width: auto;
+}
+
+.PokemonListCard-text {
+    color: rgb(48, 48, 48);
+    letter-spacing: 0.1em;
+    text-shadow:
+        0 0 1px white, 
+        0 0 1px white,
+        0 0 1px white,
+        0 0 1px white;
+}
+
+
+/* Hover Effects */
+.PokemonListCard:hover {
+    transform: scale(1.02);
+    box-shadow:
+    0 0 0.7rem 0.2rem goldenrod, /* inner yellow */
+    0 0 1rem 0.1rem black; /* outer black */
+}
+
+.PokemonListCard:hover .PokemonListCard-img {
+    transition: 400ms 150ms linear;
+    transform: scale(1.5) rotate(10deg);
 }
