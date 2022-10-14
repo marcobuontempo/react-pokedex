@@ -17,14 +17,11 @@ const fetchOnePokemonData = async (pokemon) => {
         weight: pokemonInfo.weight,
         height: pokemonInfo.height,
         name: pokemonInfo.name,
-        types: pokemonInfo.types,
-        abilities: pokemonInfo.abilities,
-        stats: pokemonInfo.stats,
-        moves: pokemonInfo.moves,
-        sprites: {
-          default: pokemonInfo.sprites.front_default,
-          shiny: pokemonInfo.sprites.front_shiny
-        }
+        types: pokemonInfo.types.map(el => el.type.name),
+        abilities: pokemonInfo.abilities.map(el => el.ability.name),
+        stats: pokemonInfo.stats.map(el => { return {name: el.stat.name, base_stat: el.base_stat}}),
+        moves: pokemonInfo.moves.map(el => el.move.name),
+        sprites: { default: pokemonInfo.sprites.front_default, shiny: pokemonInfo.sprites.front_shiny }
       }
     })
   return pokemonData
@@ -49,7 +46,7 @@ const fetchAllPokemonData = async (url) => {
     return fetchOnePokemonData(pokemon)
   }))
 
-  // console.log(allPokemonData)
+  console.log(allPokemonData)
 
   return allPokemonData
 }

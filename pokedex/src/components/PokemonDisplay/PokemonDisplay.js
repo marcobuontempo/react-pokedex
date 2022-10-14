@@ -42,24 +42,24 @@ export default function PokemonDisplay(props) {
 				return (<>
 					<ListGroup>
 						<ListGroup.Item className='fw-bold'>Type:</ListGroup.Item>
-						{pokemon.types.map(e => <ListGroup.Item key={e.type.name}>{e.type.name}</ListGroup.Item>)}
+						{pokemon.types.map(type => <ListGroup.Item key={type}>{type}</ListGroup.Item>)}
 					</ListGroup>
 					<ListGroup>
 						<ListGroup.Item className='fw-bold'>Abilities:</ListGroup.Item>
-						{pokemon.abilities.map(e => <ListGroup.Item key={e.ability.name}>{e.ability.name}</ListGroup.Item>)}
+						{pokemon.abilities.map(ability => <ListGroup.Item key={ability}>{ability}</ListGroup.Item>)}
 					</ListGroup>
 				</>)
 			case "stats":
 				return (
 					<ListGroup>
-						{pokemon.stats.map(e => <ListGroup.Item className='fw-bold' key={e.stat.name}>{e.stat.name.replace("-", " ").toUpperCase()}: <span className='fw-normal'>{e.base_stat}</span></ListGroup.Item>)}
+						{pokemon.stats.map(stat => <ListGroup.Item className='fw-bold' key={stat.name}>{stat.name.replace("-", " ").toUpperCase()}: <span className='fw-normal'>{stat.base_stat}</span></ListGroup.Item>)}
 					</ListGroup>
 				)
 			case "moves":
 				return (
 					<ListGroup>
 						<li className="list-group-item fw-bold">Moves:</li>
-						{pokemon.moves.map(e => <ListGroup.Item className="fw-bold" key={e.move.name}><span className='fw-normal'>{e.move.name}</span></ListGroup.Item>)}
+						{pokemon.moves.map(move => <ListGroup.Item className="fw-bold" key={move}><span className='fw-normal'>{move}</span></ListGroup.Item>)}
 					</ListGroup>)
 			case "physical":
 				return (

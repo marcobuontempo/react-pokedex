@@ -36,3 +36,14 @@
     transition: 400ms 150ms linear;
     transform: scale(1.5) rotate(10deg);
 }
+
+.PokemonListCard:hover .PokemonListCard-text {
+    transition: 400ms 150ms linear;
+    transform: scale(1.2);
+    color: lightgrey;
+    text-shadow:
+        0 0 3px goldenrod, 
+        0 0 3px goldenrod,
+        0 0 3px goldenrod,
+        0 0 3px goldenrod;
+}
