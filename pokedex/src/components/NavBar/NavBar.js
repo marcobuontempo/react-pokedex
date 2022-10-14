@@ -35,7 +35,7 @@ export default function NavBar(props) {
 						</Nav>
 					</Offcanvas.Body>
 				</Navbar.Offcanvas>
-				<Navbar.Brand href="#">Pokedex</Navbar.Brand>
+				<Navbar.Brand href="#" className={"poke-font"}>Pokedex</Navbar.Brand>
 			</Container>
 		</Navbar>
 		)

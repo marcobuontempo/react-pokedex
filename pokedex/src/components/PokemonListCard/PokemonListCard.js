@@ -16,8 +16,8 @@ export default function PokemonListCard(props) {
   }
 
   return (
-    <Card className='text-center px-0' key={pokemon.name} style={{ maxWidth: '350px', background: `url(${pokemon.sprites.default}) no-repeat center`, backgroundSize: '12500px' }} onClick={handleOnClick}>
-      <Card.Header>#{("00" + pokemon.id).slice(-3)}</Card.Header>
+    <Card className='text-center px-0 poke-font' key={pokemon.name} style={{ maxWidth: '350px', background: `url(${pokemon.sprites.default}) no-repeat center`, backgroundSize: '12500px' }} onClick={handleOnClick}>
+      <Card.Header style={{background: "rgba(0,0,0,0.25)"}}>#{("00" + pokemon.id).slice(-3)}</Card.Header>
       <Card.Body>
         <Container>
           <Row>
