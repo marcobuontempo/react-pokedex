@@ -36,13 +36,28 @@ export default function PokemonList() {
 
 	return (
 		<Container fluid className="overflow-auto PokemonList">
-			<Container className='overflow-auto' fluid style={{ height: "100%" }}>
-					{pokemonData.length===0 ? <div style={{display:"flex", height:"100%", justifyContent:"center", alignItems:"center"}}><Spinner animation="border" role="status" variant="danger"><span className="visually-hidden">Loading...</span></Spinner></div> : null}
+
+			<Container className='overflow-auto PokemonList-container' fluid>
+
+				{/* Loading "spinner" when pokemonData is empty */}
+				{pokemonData.length === 0 ? (
+					<div className='PokemonList-spinner'>
+						<Spinner animation="border" role="status" variant="danger">
+							<span className="visually-hidden">Loading...</span>
+						</Spinner>
+					</div>)
+					: null}
+
+				{/* Display each pokemon in the list */}
 				<Row className='justify-content-center gap-2'>
 					{pokemonData.map(pokemon => <PokemonListCard key={pokemon.id} pokemon={pokemon} selectPokemon={selectPokemon}></PokemonListCard>)}
 				</Row>
+
 			</Container>
+
+			{/* Display the overlay card when pokemon selected */}
 			{selectedPokemon ? <PokemonDisplay pokemon={selectedPokemon} selectPokemon={selectPokemon}></PokemonDisplay> : null}
+		
 		</Container>
 	)
 }

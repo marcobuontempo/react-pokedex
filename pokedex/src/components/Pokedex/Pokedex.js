@@ -21,15 +21,16 @@ export default function Pokedex() {
    * DONE 7. Link the menu and display components
    * 8. Lazy load the other Pokemon list
    * DONE 9. Add Spinners while waiting for loading
-   * 10. Add styling to components. Use correct Pokemon font
+   * 10. Add styling to components
    * 11. Add About section
-   * 12. Separate styling into .css sheets
+   * DONE 12. Separate styling into .css sheets
    * DONE 13. Extract API calls into helper function at /helpers/api.js
    * DONE 15. Only set pokemonData after pokemon from list have been added
    * 14. Refactor code
    * DONE 15. Minimise navbar once selected
    * DONE 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
    * 17. Show shiny sprite on mouse hover
+   * DONE 18. Use correct Pokemon font
    */
 
   const [menuSelected, setMenuSelected] = useState(null)

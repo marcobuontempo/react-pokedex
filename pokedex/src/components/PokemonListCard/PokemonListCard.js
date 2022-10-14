@@ -16,13 +16,13 @@ export default function PokemonListCard(props) {
   }
 
   return (
-    <Card className='text-center px-0 poke-font' key={pokemon.name} style={{ maxWidth: '350px', background: `url(${pokemon.sprites.default}) no-repeat center`, backgroundSize: '12500px' }} onClick={handleOnClick}>
-      <Card.Header style={{background: "rgba(0,0,0,0.25)"}}>#{("00" + pokemon.id).slice(-3)}</Card.Header>
+    <Card className='text-center px-0 poke-font PokemonListCard' key={pokemon.name} style={{background: `url(${pokemon.sprites.default}) no-repeat center/12500px`}} onClick={handleOnClick}>
+      <Card.Header className="PokemonListCard-header">#{("00" + pokemon.id).slice(-3)}</Card.Header>
       <Card.Body>
         <Container>
           <Row>
             <Col>
-              <Card.Img src={pokemon.sprites.default} style={{ height: '100%', width: 'auto' }}></Card.Img>
+              <Card.Img src={pokemon.sprites.default} className="PokemonListCard-img"></Card.Img>
             </Col>
             <Col>
               <Card.Text className='fw-bold'>
