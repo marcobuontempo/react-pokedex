@@ -23,7 +23,7 @@ export default function Pokedex() {
    * 8. Lazy load the other Pokemon list
    * DONE 9. Add Spinners while waiting for loading
    * 10. Add styling to components
-   *     - Padding around divs
+   *     - DONE Padding around divs
    *     - Nav Menu buttons
    *     - Text display on cards
    *     - Hover animation (scale/glow) on cards
@@ -40,6 +40,8 @@ export default function Pokedex() {
    * 19. Capitalise the Pokemon names when storing data
    * 20. Navbar brand navigates to home page
    * 21. Create home page 
+   * 22. Take only necessary information from API (e.g. moves -> only need moves.name)
+   * 23. Convert custom CSS to bootstrap (height: 100% -> h-100)
    */
 
   const [menuSelected, setMenuSelected] = useState(null)
@@ -64,7 +66,7 @@ export default function Pokedex() {
     <Stack className='Pokedex'>
       <NavBar setMenuSelected={setMenuSelected}></NavBar>
       {/* <button type="button" onClick={test}>Test</button> */}
-      <Container fluid className="overflow-auto Pokedex-container">
+      <Container fluid className="overflow-auto Pokedex-container p-0">
         {getDisplayContent(menuSelected)}
       </Container>
     </Stack>

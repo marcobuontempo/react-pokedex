@@ -26,7 +26,7 @@ export default function PokemonDisplay(props) {
 	const navItems = ["Overview", "Stats", "Moves", "Physical"]
 	const getNavbar = (navItems) => {
 		return (
-			<Nav variant="tabs" defaultActiveKey={navItems[0].toLowerCase()} onSelect={changeDisplay}>
+			<Nav variant="tabs" defaultActiveKey={navItems[0].toLowerCase()} onSelect={changeDisplay} className="justify-content-center">
 				{navItems.map(e => <Nav.Item key={e.toLowerCase()}><Nav.Link as="button" href={e.toLowerCase()}>{e}</Nav.Link></Nav.Item>)}
 			</Nav>
 		)
@@ -72,7 +72,7 @@ export default function PokemonDisplay(props) {
 		<Card bg='light' className='PokemonDisplay'>
 			<Button variant="outline-danger" size="sm" className='PokemonDisplay-back-button' onClick={goBack}>Back</Button>
 
-			<Card.Title as='h1' className="text-center">{pokemon.name}</Card.Title>
+			<Card.Title as='h1' className="text-center pt-2">{pokemon.name}</Card.Title>
 			<Card.Img variant="top" src={pokemon.sprites.default} className='PokemonDisplay-pokemon-img' />
 
 			<Card.Body className='overflow-scroll'>

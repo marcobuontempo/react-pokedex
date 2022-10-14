@@ -36,7 +36,7 @@ export default function PokemonList() {
 
 	return (
 		<>
-			<Container className='overflow-auto PokemonList-container' fluid>
+			<Container className='overflow-auto py-3 PokemonList-container' fluid>
 				{/* Loading "spinner" when pokemonData is empty */}
 				{pokemonData.length === 0 ? (
 					<div className='PokemonList-spinner'>
@@ -47,7 +47,7 @@ export default function PokemonList() {
 					: null}
 
 				{/* Display each pokemon in the list */}
-				<Row className='justify-content-center gap-2'>
+				<Row className='justify-content-evenly gap-2'>
 					{pokemonData.map(pokemon => <PokemonListCard key={pokemon.id} pokemon={pokemon} selectPokemon={selectPokemon}></PokemonListCard>)}
 				</Row>
 			</Container>
