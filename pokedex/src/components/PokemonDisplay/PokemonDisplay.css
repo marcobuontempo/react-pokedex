@@ -14,7 +14,13 @@
     font-weight: bold;
 }
 
-.PokemonDisplay-pokemon-img {
-    max-height: 30%;
+.PokemonDisplay-img-container {
+    height: 30%;
+    width: 100%;
+}
+
+.PokemonDisplay-img {
+    width: auto;
+    height: 100%;
     object-fit: contain;
 }

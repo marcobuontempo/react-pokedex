@@ -19,6 +19,10 @@ export default function PokemonDisplay(props) {
 		props.selectPokemon(null)
 	}
 
+	const togglePokemonImage = (e) => {
+		e.target.src = e.target.src === pokemon.sprites.default ? pokemon.sprites.shiny : pokemon.sprites.default;
+	}
+
 	const changeDisplay = (key) => {
 		setDisplayType(key)
 	}
@@ -73,8 +77,9 @@ export default function PokemonDisplay(props) {
 			<Button variant="outline-danger" size="sm" className='PokemonDisplay-back-button' onClick={goBack}>Back</Button>
 
 			<Card.Title as='h1' className="text-center pt-2">{pokemon.name}</Card.Title>
-			<Card.Img variant="top" src={pokemon.sprites.default} className='PokemonDisplay-pokemon-img' />
-
+			<Stack direction='horizontal' className='PokemonDisplay-img-container justify-content-center'>
+				<Card.Img variant="top" src={pokemon.sprites.default} className='PokemonDisplay-img' onMouseEnter={togglePokemonImage} onMouseLeave={togglePokemonImage} />
+			</Stack>
 			<Card.Body className='overflow-scroll'>
 				<Stack gap={3}>
 					{getDisplayContent(displayType)}

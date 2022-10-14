@@ -26,7 +26,7 @@ export default function Pokedex() {
    *     - DONE Padding around divs
    *     - DONE Nav Menu buttons
    *     - DONE Text display on cards
-   *     - Hover animation (scale/glow) on cards
+   *     - DONE Hover animation (scale/glow) on cards
    *     - Custom scroll bars
    * 11. Add About section
    * DONE 12. Separate styling into .css sheets
@@ -35,14 +35,14 @@ export default function Pokedex() {
    * 14. Refactor code
    * DONE 15. Minimise navbar once selected
    * DONE 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
-   * 17. Show shiny sprite on mouse hover
+   * DONE 17. Show shiny sprite on mouse hover
    * DONE 18. Use correct Pokemon font
    * 19. Capitalise the Pokemon names when storing data
    * 20. Navbar brand navigates to home page
    * 21. Create home page 
    * 22. Take only necessary information from API (e.g. moves -> only need moves.name)
    * 23. Convert custom CSS to bootstrap (height: 100% -> h-100)
-   * 24. Logo: combine React and Pokeball
+   * 24. NavBar Brand Logo: combine React and Pokeball
    */
 
   const [menuSelected, setMenuSelected] = useState(null)
