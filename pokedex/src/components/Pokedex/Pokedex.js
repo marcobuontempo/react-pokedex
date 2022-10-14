@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import PokemonList from '../PokemonList/PokemonList';
 
 import Stack from 'react-bootstrap/Stack';
+import Container from 'react-bootstrap/Container';
 import NavBar from '../NavBar/NavBar';
 import About from '../About/About';
 
@@ -22,6 +23,11 @@ export default function Pokedex() {
    * 8. Lazy load the other Pokemon list
    * DONE 9. Add Spinners while waiting for loading
    * 10. Add styling to components
+   *     - Padding around divs
+   *     - Nav Menu buttons
+   *     - Text display on cards
+   *     - Hover animation (scale/glow) on cards
+   *     - Custom scroll bars
    * 11. Add About section
    * DONE 12. Separate styling into .css sheets
    * DONE 13. Extract API calls into helper function at /helpers/api.js
@@ -31,12 +37,15 @@ export default function Pokedex() {
    * DONE 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
    * 17. Show shiny sprite on mouse hover
    * DONE 18. Use correct Pokemon font
+   * 19. Capitalise the Pokemon names when storing data
+   * 20. Navbar brand navigates to home page
+   * 21. Create home page 
    */
 
   const [menuSelected, setMenuSelected] = useState(null)
 
   const getDisplayContent = (displayType) => {
-    switch(displayType) {
+    switch (displayType) {
       case "PokemonList":
         return <PokemonList></PokemonList>
       case "About":
@@ -54,8 +63,10 @@ export default function Pokedex() {
   return (
     <Stack className='Pokedex'>
       <NavBar setMenuSelected={setMenuSelected}></NavBar>
-      <button type="button" onClick={test}>Test</button>
-      {getDisplayContent(menuSelected)}
+      {/* <button type="button" onClick={test}>Test</button> */}
+      <Container fluid className="overflow-auto Pokedex-container">
+        {getDisplayContent(menuSelected)}
+      </Container>
     </Stack>
   )
 }
