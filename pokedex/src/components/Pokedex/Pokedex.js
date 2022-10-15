@@ -28,6 +28,7 @@ export default function Pokedex() {
    *     - DONE Text display on cards
    *     - DONE Hover animation (scale/glow) on cards
    *     - Custom scroll bars
+   *     - PokemonDisplay styling (font, navlist, etc...)
    * 11. Add About section
    * DONE 12. Separate styling into .css sheets
    * DONE 13. Extract API calls into helper function at /helpers/api.js
@@ -40,9 +41,10 @@ export default function Pokedex() {
    * 19. Capitalise the Pokemon names, moves, abilities when storing data. Remove any '-'
    * 20. Navbar brand navigates to home page
    * 21. Create home page 
-   * 22. Take only necessary information from API (e.g. moves -> only need moves.name)
+   * DONE 22. Take only necessary information from API (e.g. moves -> only need moves.name)
    * 23. Convert custom CSS to bootstrap (height: 100% -> h-100)
    * 24. NavBar Brand Logo: combine React and Pokeball
+   * 25. On API Error -> Show button 'Load Dummy Data' -> Shows dummy data
    */
 
   const [menuSelected, setMenuSelected] = useState(null)

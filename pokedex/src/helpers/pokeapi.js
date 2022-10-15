@@ -28,7 +28,7 @@ const fetchOnePokemonData = async (pokemon) => {
 }
 
 const fetchAllPokemonData = async (url) => {
-  const pokemonList = await axios
+  const allPokemonData = await axios
     .get(url)
     .then(res => {
       // console.log(res);
@@ -38,15 +38,16 @@ const fetchAllPokemonData = async (url) => {
       pokemonURL = data.next
       return data.results
     })
+    .then(pokemonList => {
+      return Promise.all(pokemonList.map(pokemon => {
+        return fetchOnePokemonData(pokemon)
+      }))
+    })
     .catch(err => {
       return err
     })
 
-  const allPokemonData = await Promise.all(pokemonList.map(pokemon => {
-    return fetchOnePokemonData(pokemon)
-  }))
-
-  console.log(allPokemonData)
+  // console.log(allPokemonData)
 
   return allPokemonData
 }

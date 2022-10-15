@@ -14,19 +14,33 @@ import * as pokeapi from '../../helpers/pokeapi'
 export default function PokemonList() {
 	const [selectedPokemon, setSelectedPokemon] = useState(null);
 	const [pokemonData, setPokemonData] = useState([]);
+	const [APIError, setAPIError] = useState(false);
 
-	useEffect(() => {
-		async function getPokemonData() {
+	const infiniteScroll = (e) => {
+		e.preventDefault()
+		if(e.target.scrollTop + e.target.offsetHeight >= e.target.scrollHeight) {
+			getPokemonData()
+		}
+	}
+
+	const getPokemonData = async () => {
+		try {
 			const pokemonArr = await pokeapi.fetchAllPokemonData(pokeapi.pokemonURL)
 			setPokemonData([...pokemonData, ...pokemonArr])
-
-			const storageData = {
-				date_set: new Date(),
-				pokemon_data: pokemonData
-			}
-
-			localStorage.setItem("pokemon_data", JSON.stringify(storageData))
 		}
+		catch (err) {
+			setAPIError(true)
+		}
+
+		// const storageData = {
+		// 	date_set: new Date(),
+		// 	pokemon_data: pokemonData
+		// }
+
+		// localStorage.setItem("pokemon_data", JSON.stringify(storageData))
+	}
+
+	useEffect(() => {
 		getPokemonData()
 	}, [])
 
@@ -36,7 +50,7 @@ export default function PokemonList() {
 
 	return (
 		<>
-			<Container className='overflow-auto py-3 PokemonList-container' fluid>
+			<Container className='overflow-auto py-3 PokemonList-container' fluid onScroll={infiniteScroll}>
 				{/* Loading "spinner" when pokemonData is empty */}
 				{pokemonData.length === 0 ? (
 					<div className='PokemonList-spinner'>
@@ -46,8 +60,12 @@ export default function PokemonList() {
 					</div>)
 					: null}
 
+				{/* API Error */}
+				{/* {APIError ? <span>API ERROR</span> : null} */}
+				{/* Render contents in separate function */}
+
 				{/* Display each pokemon in the list */}
-				<Row className='justify-content-evenly gap-2'>
+				<Row className='justify-content-evenly gap-2' >
 					{pokemonData.map(pokemon => <PokemonListCard key={pokemon.id} pokemon={pokemon} selectPokemon={selectPokemon}></PokemonListCard>)}
 				</Row>
 			</Container>
