@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-pokedex/static/css/main.81538b82.css",
+    "main.css": "/react-pokedex/static/css/main.079e604f.css",
     "main.js": "/react-pokedex/static/js/main.e2d717b9.js",
     "static/js/787.7e0b23c5.chunk.js": "/react-pokedex/static/js/787.7e0b23c5.chunk.js",
     "index.html": "/react-pokedex/index.html",
-    "main.81538b82.css.map": "/react-pokedex/static/css/main.81538b82.css.map",
+    "main.079e604f.css.map": "/react-pokedex/static/css/main.079e604f.css.map",
     "main.e2d717b9.js.map": "/react-pokedex/static/js/main.e2d717b9.js.map",
     "787.7e0b23c5.chunk.js.map": "/react-pokedex/static/js/787.7e0b23c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.81538b82.css",
+    "static/css/main.079e604f.css",
     "static/js/main.e2d717b9.js"
   ]
 }
