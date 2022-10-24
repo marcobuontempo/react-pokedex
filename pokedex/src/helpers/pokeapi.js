@@ -1,5 +1,5 @@
 import axios from "axios"
-const placeholder_sprite = "/images/placeholder_sprite.png"
+const placeholder_sprite = "%PUBLIC_URL%/images/placeholder_sprite.png"
 
 const POKEAPI_URL = "https://pokeapi.co/api/v2/"
 let pokemonURL = POKEAPI_URL + "pokemon"
