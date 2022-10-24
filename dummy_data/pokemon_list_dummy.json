@@ -1,0 +1,2307 @@
+[
+    {
+        "id": 1,
+        "weight": 69,
+        "height": 7,
+        "name": "bulbasaur",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "abilities": [
+            "overgrow",
+            "chlorophyll"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 45
+            },
+            {
+                "name": "attack",
+                "base_stat": 49
+            },
+            {
+                "name": "defense",
+                "base_stat": 49
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 65
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 65
+            },
+            {
+                "name": "speed",
+                "base_stat": 45
+            }
+        ],
+        "moves": [
+            "razor-wind",
+            "swords-dance",
+            "cut",
+            "bind",
+            "vine-whip",
+            "headbutt",
+            "tackle",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "growl",
+            "strength",
+            "mega-drain",
+            "leech-seed",
+            "growth",
+            "razor-leaf",
+            "solar-beam",
+            "poison-powder",
+            "sleep-powder",
+            "petal-dance",
+            "string-shot",
+            "toxic",
+            "rage",
+            "mimic",
+            "double-team",
+            "defense-curl",
+            "light-screen",
+            "reflect",
+            "bide",
+            "sludge",
+            "skull-bash",
+            "amnesia",
+            "flash",
+            "rest",
+            "substitute",
+            "snore",
+            "curse",
+            "protect",
+            "sludge-bomb",
+            "mud-slap",
+            "outrage",
+            "giga-drain",
+            "endure",
+            "charm",
+            "false-swipe",
+            "swagger",
+            "fury-cutter",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "safeguard",
+            "sweet-scent",
+            "synthesis",
+            "hidden-power",
+            "sunny-day",
+            "rock-smash",
+            "facade",
+            "nature-power",
+            "helping-hand",
+            "ingrain",
+            "knock-off",
+            "secret-power",
+            "weather-ball",
+            "grass-whistle",
+            "bullet-seed",
+            "magical-leaf",
+            "natural-gift",
+            "worry-seed",
+            "seed-bomb",
+            "energy-ball",
+            "leaf-storm",
+            "power-whip",
+            "captivate",
+            "grass-knot",
+            "venoshock",
+            "round",
+            "echoed-voice",
+            "grass-pledge",
+            "work-up",
+            "grassy-terrain",
+            "confide",
+            "grassy-glide"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png"
+        }
+    },
+    {
+        "id": 2,
+        "weight": 130,
+        "height": 10,
+        "name": "ivysaur",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "abilities": [
+            "overgrow",
+            "chlorophyll"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 60
+            },
+            {
+                "name": "attack",
+                "base_stat": 62
+            },
+            {
+                "name": "defense",
+                "base_stat": 63
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 80
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 80
+            },
+            {
+                "name": "speed",
+                "base_stat": 60
+            }
+        ],
+        "moves": [
+            "swords-dance",
+            "cut",
+            "bind",
+            "vine-whip",
+            "headbutt",
+            "tackle",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "growl",
+            "strength",
+            "mega-drain",
+            "leech-seed",
+            "growth",
+            "razor-leaf",
+            "solar-beam",
+            "poison-powder",
+            "sleep-powder",
+            "string-shot",
+            "toxic",
+            "rage",
+            "mimic",
+            "double-team",
+            "defense-curl",
+            "light-screen",
+            "reflect",
+            "bide",
+            "amnesia",
+            "flash",
+            "rest",
+            "substitute",
+            "snore",
+            "curse",
+            "protect",
+            "sludge-bomb",
+            "mud-slap",
+            "outrage",
+            "giga-drain",
+            "endure",
+            "charm",
+            "false-swipe",
+            "swagger",
+            "fury-cutter",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "safeguard",
+            "sweet-scent",
+            "synthesis",
+            "hidden-power",
+            "sunny-day",
+            "rock-smash",
+            "facade",
+            "nature-power",
+            "helping-hand",
+            "knock-off",
+            "secret-power",
+            "weather-ball",
+            "bullet-seed",
+            "magical-leaf",
+            "natural-gift",
+            "worry-seed",
+            "seed-bomb",
+            "energy-ball",
+            "leaf-storm",
+            "power-whip",
+            "captivate",
+            "grass-knot",
+            "venoshock",
+            "round",
+            "echoed-voice",
+            "grass-pledge",
+            "work-up",
+            "grassy-terrain",
+            "confide",
+            "grassy-glide"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png"
+        }
+    },
+    {
+        "id": 3,
+        "weight": 1000,
+        "height": 20,
+        "name": "venusaur",
+        "types": [
+            "grass",
+            "poison"
+        ],
+        "abilities": [
+            "overgrow",
+            "chlorophyll"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 80
+            },
+            {
+                "name": "attack",
+                "base_stat": 82
+            },
+            {
+                "name": "defense",
+                "base_stat": 83
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 100
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 100
+            },
+            {
+                "name": "speed",
+                "base_stat": 80
+            }
+        ],
+        "moves": [
+            "swords-dance",
+            "cut",
+            "bind",
+            "vine-whip",
+            "headbutt",
+            "tackle",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "growl",
+            "roar",
+            "hyper-beam",
+            "strength",
+            "mega-drain",
+            "leech-seed",
+            "growth",
+            "razor-leaf",
+            "solar-beam",
+            "poison-powder",
+            "sleep-powder",
+            "petal-dance",
+            "string-shot",
+            "earthquake",
+            "toxic",
+            "rage",
+            "mimic",
+            "double-team",
+            "defense-curl",
+            "light-screen",
+            "reflect",
+            "bide",
+            "amnesia",
+            "flash",
+            "rest",
+            "substitute",
+            "snore",
+            "curse",
+            "protect",
+            "sludge-bomb",
+            "mud-slap",
+            "outrage",
+            "giga-drain",
+            "endure",
+            "charm",
+            "false-swipe",
+            "swagger",
+            "fury-cutter",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "safeguard",
+            "sweet-scent",
+            "synthesis",
+            "hidden-power",
+            "sunny-day",
+            "rock-smash",
+            "facade",
+            "nature-power",
+            "helping-hand",
+            "knock-off",
+            "secret-power",
+            "weather-ball",
+            "bullet-seed",
+            "block",
+            "frenzy-plant",
+            "magical-leaf",
+            "natural-gift",
+            "worry-seed",
+            "seed-bomb",
+            "energy-ball",
+            "earth-power",
+            "giga-impact",
+            "rock-climb",
+            "leaf-storm",
+            "power-whip",
+            "captivate",
+            "grass-knot",
+            "venoshock",
+            "round",
+            "echoed-voice",
+            "grass-pledge",
+            "bulldoze",
+            "work-up",
+            "petal-blizzard",
+            "grassy-terrain",
+            "confide",
+            "stomping-tantrum",
+            "grassy-glide",
+            "terrain-pulse"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/3.png"
+        }
+    },
+    {
+        "id": 4,
+        "weight": 85,
+        "height": 6,
+        "name": "charmander",
+        "types": [
+            "fire"
+        ],
+        "abilities": [
+            "blaze",
+            "solar-power"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 39
+            },
+            {
+                "name": "attack",
+                "base_stat": 52
+            },
+            {
+                "name": "defense",
+                "base_stat": 43
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 60
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 50
+            },
+            {
+                "name": "speed",
+                "base_stat": 65
+            }
+        ],
+        "moves": [
+            "mega-punch",
+            "fire-punch",
+            "thunder-punch",
+            "scratch",
+            "swords-dance",
+            "cut",
+            "wing-attack",
+            "mega-kick",
+            "headbutt",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "leer",
+            "bite",
+            "growl",
+            "ember",
+            "flamethrower",
+            "submission",
+            "counter",
+            "seismic-toss",
+            "strength",
+            "dragon-rage",
+            "fire-spin",
+            "dig",
+            "toxic",
+            "rage",
+            "mimic",
+            "double-team",
+            "smokescreen",
+            "defense-curl",
+            "reflect",
+            "bide",
+            "fire-blast",
+            "swift",
+            "skull-bash",
+            "fury-swipes",
+            "rest",
+            "rock-slide",
+            "slash",
+            "substitute",
+            "snore",
+            "curse",
+            "protect",
+            "scary-face",
+            "belly-drum",
+            "mud-slap",
+            "outrage",
+            "endure",
+            "false-swipe",
+            "swagger",
+            "fury-cutter",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "dynamic-punch",
+            "dragon-breath",
+            "iron-tail",
+            "metal-claw",
+            "hidden-power",
+            "sunny-day",
+            "crunch",
+            "ancient-power",
+            "rock-smash",
+            "beat-up",
+            "heat-wave",
+            "will-o-wisp",
+            "facade",
+            "focus-punch",
+            "helping-hand",
+            "brick-break",
+            "secret-power",
+            "weather-ball",
+            "air-cutter",
+            "overheat",
+            "rock-tomb",
+            "aerial-ace",
+            "dragon-claw",
+            "dragon-dance",
+            "natural-gift",
+            "fling",
+            "flare-blitz",
+            "dragon-pulse",
+            "dragon-rush",
+            "shadow-claw",
+            "fire-fang",
+            "captivate",
+            "hone-claws",
+            "flame-burst",
+            "flame-charge",
+            "round",
+            "echoed-voice",
+            "incinerate",
+            "acrobatics",
+            "inferno",
+            "fire-pledge",
+            "dragon-tail",
+            "work-up",
+            "confide",
+            "power-up-punch"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/4.png"
+        }
+    },
+    {
+        "id": 5,
+        "weight": 190,
+        "height": 11,
+        "name": "charmeleon",
+        "types": [
+            "fire"
+        ],
+        "abilities": [
+            "blaze",
+            "solar-power"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 58
+            },
+            {
+                "name": "attack",
+                "base_stat": 64
+            },
+            {
+                "name": "defense",
+                "base_stat": 58
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 80
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 65
+            },
+            {
+                "name": "speed",
+                "base_stat": 80
+            }
+        ],
+        "moves": [
+            "mega-punch",
+            "fire-punch",
+            "thunder-punch",
+            "scratch",
+            "swords-dance",
+            "cut",
+            "mega-kick",
+            "headbutt",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "leer",
+            "growl",
+            "ember",
+            "flamethrower",
+            "submission",
+            "counter",
+            "seismic-toss",
+            "strength",
+            "dragon-rage",
+            "fire-spin",
+            "dig",
+            "toxic",
+            "rage",
+            "mimic",
+            "double-team",
+            "smokescreen",
+            "defense-curl",
+            "reflect",
+            "bide",
+            "fire-blast",
+            "swift",
+            "skull-bash",
+            "fury-swipes",
+            "rest",
+            "rock-slide",
+            "slash",
+            "substitute",
+            "snore",
+            "curse",
+            "protect",
+            "scary-face",
+            "mud-slap",
+            "outrage",
+            "endure",
+            "false-swipe",
+            "swagger",
+            "fury-cutter",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "dynamic-punch",
+            "dragon-breath",
+            "iron-tail",
+            "metal-claw",
+            "hidden-power",
+            "sunny-day",
+            "crunch",
+            "rock-smash",
+            "beat-up",
+            "heat-wave",
+            "will-o-wisp",
+            "facade",
+            "focus-punch",
+            "helping-hand",
+            "brick-break",
+            "secret-power",
+            "weather-ball",
+            "overheat",
+            "rock-tomb",
+            "aerial-ace",
+            "dragon-claw",
+            "dragon-dance",
+            "natural-gift",
+            "fling",
+            "flare-blitz",
+            "dragon-pulse",
+            "shadow-claw",
+            "fire-fang",
+            "captivate",
+            "hone-claws",
+            "flame-burst",
+            "flame-charge",
+            "round",
+            "echoed-voice",
+            "incinerate",
+            "acrobatics",
+            "inferno",
+            "fire-pledge",
+            "work-up",
+            "confide",
+            "power-up-punch"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/5.png"
+        }
+    },
+    {
+        "id": 6,
+        "weight": 905,
+        "height": 17,
+        "name": "charizard",
+        "types": [
+            "fire",
+            "flying"
+        ],
+        "abilities": [
+            "blaze",
+            "solar-power"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 78
+            },
+            {
+                "name": "attack",
+                "base_stat": 84
+            },
+            {
+                "name": "defense",
+                "base_stat": 78
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 109
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 85
+            },
+            {
+                "name": "speed",
+                "base_stat": 100
+            }
+        ],
+        "moves": [
+            "mega-punch",
+            "fire-punch",
+            "thunder-punch",
+            "scratch",
+            "swords-dance",
+            "cut",
+            "wing-attack",
+            "fly",
+            "mega-kick",
+            "headbutt",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "leer",
+            "growl",
+            "roar",
+            "ember",
+            "flamethrower",
+            "hyper-beam",
+            "submission",
+            "counter",
+            "seismic-toss",
+            "strength",
+            "solar-beam",
+            "dragon-rage",
+            "fire-spin",
+            "earthquake",
+            "fissure",
+            "dig",
+            "toxic",
+            "rage",
+            "mimic",
+            "double-team",
+            "smokescreen",
+            "defense-curl",
+            "reflect",
+            "bide",
+            "fire-blast",
+            "swift",
+            "skull-bash",
+            "fury-swipes",
+            "rest",
+            "rock-slide",
+            "slash",
+            "substitute",
+            "snore",
+            "curse",
+            "protect",
+            "scary-face",
+            "mud-slap",
+            "outrage",
+            "sandstorm",
+            "endure",
+            "false-swipe",
+            "swagger",
+            "fury-cutter",
+            "steel-wing",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "dynamic-punch",
+            "dragon-breath",
+            "iron-tail",
+            "metal-claw",
+            "hidden-power",
+            "twister",
+            "sunny-day",
+            "crunch",
+            "rock-smash",
+            "beat-up",
+            "heat-wave",
+            "will-o-wisp",
+            "facade",
+            "focus-punch",
+            "helping-hand",
+            "brick-break",
+            "secret-power",
+            "blaze-kick",
+            "blast-burn",
+            "weather-ball",
+            "air-cutter",
+            "overheat",
+            "rock-tomb",
+            "aerial-ace",
+            "dragon-claw",
+            "dragon-dance",
+            "roost",
+            "natural-gift",
+            "tailwind",
+            "fling",
+            "flare-blitz",
+            "air-slash",
+            "dragon-pulse",
+            "focus-blast",
+            "giga-impact",
+            "shadow-claw",
+            "fire-fang",
+            "defog",
+            "captivate",
+            "ominous-wind",
+            "hone-claws",
+            "flame-burst",
+            "flame-charge",
+            "round",
+            "echoed-voice",
+            "sky-drop",
+            "incinerate",
+            "acrobatics",
+            "inferno",
+            "fire-pledge",
+            "bulldoze",
+            "dragon-tail",
+            "work-up",
+            "heat-crash",
+            "hurricane",
+            "confide",
+            "mystical-fire",
+            "power-up-punch",
+            "brutal-swing",
+            "breaking-swipe",
+            "scale-shot",
+            "dual-wingbeat",
+            "scorching-sands"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/6.png"
+        }
+    },
+    {
+        "id": 7,
+        "weight": 90,
+        "height": 5,
+        "name": "squirtle",
+        "types": [
+            "water"
+        ],
+        "abilities": [
+            "torrent",
+            "rain-dish"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 44
+            },
+            {
+                "name": "attack",
+                "base_stat": 48
+            },
+            {
+                "name": "defense",
+                "base_stat": 65
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 50
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 64
+            },
+            {
+                "name": "speed",
+                "base_stat": 43
+            }
+        ],
+        "moves": [
+            "mega-punch",
+            "ice-punch",
+            "mega-kick",
+            "headbutt",
+            "tackle",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "tail-whip",
+            "bite",
+            "mist",
+            "water-gun",
+            "hydro-pump",
+            "surf",
+            "ice-beam",
+            "blizzard",
+            "bubble-beam",
+            "submission",
+            "counter",
+            "seismic-toss",
+            "strength",
+            "dig",
+            "toxic",
+            "confusion",
+            "rage",
+            "mimic",
+            "double-team",
+            "withdraw",
+            "defense-curl",
+            "haze",
+            "reflect",
+            "bide",
+            "waterfall",
+            "skull-bash",
+            "bubble",
+            "rest",
+            "rock-slide",
+            "substitute",
+            "snore",
+            "curse",
+            "flail",
+            "protect",
+            "mud-slap",
+            "foresight",
+            "icy-wind",
+            "outrage",
+            "endure",
+            "rollout",
+            "false-swipe",
+            "swagger",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "dynamic-punch",
+            "rapid-spin",
+            "iron-tail",
+            "hidden-power",
+            "rain-dance",
+            "mirror-coat",
+            "rock-smash",
+            "whirlpool",
+            "fake-out",
+            "hail",
+            "facade",
+            "focus-punch",
+            "helping-hand",
+            "brick-break",
+            "yawn",
+            "refresh",
+            "secret-power",
+            "dive",
+            "mud-sport",
+            "weather-ball",
+            "rock-tomb",
+            "water-spout",
+            "muddy-water",
+            "iron-defense",
+            "water-pulse",
+            "gyro-ball",
+            "brine",
+            "natural-gift",
+            "fling",
+            "aqua-ring",
+            "aura-sphere",
+            "aqua-tail",
+            "dragon-pulse",
+            "zen-headbutt",
+            "captivate",
+            "aqua-jet",
+            "round",
+            "scald",
+            "shell-smash",
+            "water-pledge",
+            "work-up",
+            "confide",
+            "power-up-punch",
+            "life-dew",
+            "flip-turn"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/7.png"
+        }
+    },
+    {
+        "id": 8,
+        "weight": 225,
+        "height": 10,
+        "name": "wartortle",
+        "types": [
+            "water"
+        ],
+        "abilities": [
+            "torrent",
+            "rain-dish"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 59
+            },
+            {
+                "name": "attack",
+                "base_stat": 63
+            },
+            {
+                "name": "defense",
+                "base_stat": 80
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 65
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 80
+            },
+            {
+                "name": "speed",
+                "base_stat": 58
+            }
+        ],
+        "moves": [
+            "mega-punch",
+            "ice-punch",
+            "mega-kick",
+            "headbutt",
+            "tackle",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "tail-whip",
+            "bite",
+            "water-gun",
+            "hydro-pump",
+            "surf",
+            "ice-beam",
+            "blizzard",
+            "bubble-beam",
+            "submission",
+            "counter",
+            "seismic-toss",
+            "strength",
+            "dig",
+            "toxic",
+            "rage",
+            "mimic",
+            "double-team",
+            "withdraw",
+            "defense-curl",
+            "reflect",
+            "bide",
+            "waterfall",
+            "skull-bash",
+            "bubble",
+            "rest",
+            "rock-slide",
+            "substitute",
+            "snore",
+            "curse",
+            "protect",
+            "mud-slap",
+            "icy-wind",
+            "outrage",
+            "endure",
+            "rollout",
+            "false-swipe",
+            "swagger",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "dynamic-punch",
+            "rapid-spin",
+            "iron-tail",
+            "hidden-power",
+            "rain-dance",
+            "rock-smash",
+            "whirlpool",
+            "hail",
+            "facade",
+            "focus-punch",
+            "helping-hand",
+            "brick-break",
+            "secret-power",
+            "dive",
+            "weather-ball",
+            "rock-tomb",
+            "muddy-water",
+            "iron-defense",
+            "water-pulse",
+            "gyro-ball",
+            "brine",
+            "natural-gift",
+            "fling",
+            "aura-sphere",
+            "aqua-tail",
+            "dragon-pulse",
+            "zen-headbutt",
+            "captivate",
+            "round",
+            "scald",
+            "shell-smash",
+            "water-pledge",
+            "work-up",
+            "confide",
+            "power-up-punch",
+            "flip-turn"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/8.png"
+        }
+    },
+    {
+        "id": 9,
+        "weight": 855,
+        "height": 16,
+        "name": "blastoise",
+        "types": [
+            "water"
+        ],
+        "abilities": [
+            "torrent",
+            "rain-dish"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 79
+            },
+            {
+                "name": "attack",
+                "base_stat": 83
+            },
+            {
+                "name": "defense",
+                "base_stat": 100
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 85
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 105
+            },
+            {
+                "name": "speed",
+                "base_stat": 78
+            }
+        ],
+        "moves": [
+            "mega-punch",
+            "ice-punch",
+            "mega-kick",
+            "headbutt",
+            "tackle",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "tail-whip",
+            "bite",
+            "roar",
+            "water-gun",
+            "hydro-pump",
+            "surf",
+            "ice-beam",
+            "blizzard",
+            "bubble-beam",
+            "hyper-beam",
+            "submission",
+            "counter",
+            "seismic-toss",
+            "strength",
+            "earthquake",
+            "fissure",
+            "dig",
+            "toxic",
+            "rage",
+            "mimic",
+            "double-team",
+            "withdraw",
+            "defense-curl",
+            "reflect",
+            "bide",
+            "waterfall",
+            "skull-bash",
+            "bubble",
+            "rest",
+            "rock-slide",
+            "substitute",
+            "snore",
+            "curse",
+            "protect",
+            "mud-slap",
+            "icy-wind",
+            "outrage",
+            "endure",
+            "rollout",
+            "false-swipe",
+            "swagger",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "dynamic-punch",
+            "rapid-spin",
+            "iron-tail",
+            "hidden-power",
+            "rain-dance",
+            "crunch",
+            "rock-smash",
+            "whirlpool",
+            "fake-out",
+            "hail",
+            "facade",
+            "focus-punch",
+            "helping-hand",
+            "brick-break",
+            "secret-power",
+            "dive",
+            "hydro-cannon",
+            "weather-ball",
+            "rock-tomb",
+            "signal-beam",
+            "muddy-water",
+            "iron-defense",
+            "water-pulse",
+            "gyro-ball",
+            "brine",
+            "natural-gift",
+            "fling",
+            "aura-sphere",
+            "dark-pulse",
+            "aqua-tail",
+            "dragon-pulse",
+            "focus-blast",
+            "giga-impact",
+            "avalanche",
+            "zen-headbutt",
+            "flash-cannon",
+            "rock-climb",
+            "captivate",
+            "aqua-jet",
+            "smack-down",
+            "round",
+            "scald",
+            "shell-smash",
+            "water-pledge",
+            "bulldoze",
+            "dragon-tail",
+            "work-up",
+            "confide",
+            "power-up-punch",
+            "liquidation",
+            "body-press",
+            "terrain-pulse",
+            "flip-turn"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/9.png"
+        }
+    },
+    {
+        "id": 10,
+        "weight": 29,
+        "height": 3,
+        "name": "caterpie",
+        "types": [
+            "bug"
+        ],
+        "abilities": [
+            "shield-dust",
+            "run-away"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 45
+            },
+            {
+                "name": "attack",
+                "base_stat": 30
+            },
+            {
+                "name": "defense",
+                "base_stat": 35
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 20
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 20
+            },
+            {
+                "name": "speed",
+                "base_stat": 45
+            }
+        ],
+        "moves": [
+            "tackle",
+            "string-shot",
+            "snore",
+            "bug-bite",
+            "electroweb"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/10.png"
+        }
+    },
+    {
+        "id": 11,
+        "weight": 99,
+        "height": 7,
+        "name": "metapod",
+        "types": [
+            "bug"
+        ],
+        "abilities": [
+            "shed-skin"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 50
+            },
+            {
+                "name": "attack",
+                "base_stat": 20
+            },
+            {
+                "name": "defense",
+                "base_stat": 55
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 25
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 25
+            },
+            {
+                "name": "speed",
+                "base_stat": 30
+            }
+        ],
+        "moves": [
+            "string-shot",
+            "harden",
+            "iron-defense",
+            "bug-bite",
+            "electroweb"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/11.png"
+        }
+    },
+    {
+        "id": 12,
+        "weight": 320,
+        "height": 11,
+        "name": "butterfree",
+        "types": [
+            "bug",
+            "flying"
+        ],
+        "abilities": [
+            "compound-eyes",
+            "tinted-lens"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 60
+            },
+            {
+                "name": "attack",
+                "base_stat": 45
+            },
+            {
+                "name": "defense",
+                "base_stat": 50
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 90
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 80
+            },
+            {
+                "name": "speed",
+                "base_stat": 70
+            }
+        ],
+        "moves": [
+            "razor-wind",
+            "gust",
+            "whirlwind",
+            "headbutt",
+            "tackle",
+            "take-down",
+            "double-edge",
+            "supersonic",
+            "psybeam",
+            "hyper-beam",
+            "mega-drain",
+            "solar-beam",
+            "poison-powder",
+            "stun-spore",
+            "sleep-powder",
+            "string-shot",
+            "toxic",
+            "confusion",
+            "psychic",
+            "rage",
+            "teleport",
+            "mimic",
+            "double-team",
+            "harden",
+            "reflect",
+            "bide",
+            "swift",
+            "dream-eater",
+            "flash",
+            "psywave",
+            "rest",
+            "substitute",
+            "thief",
+            "nightmare",
+            "snore",
+            "curse",
+            "protect",
+            "giga-drain",
+            "endure",
+            "swagger",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "safeguard",
+            "baton-pass",
+            "sweet-scent",
+            "hidden-power",
+            "twister",
+            "rain-dance",
+            "sunny-day",
+            "psych-up",
+            "shadow-ball",
+            "facade",
+            "skill-swap",
+            "secret-power",
+            "air-cutter",
+            "silver-wind",
+            "signal-beam",
+            "aerial-ace",
+            "iron-defense",
+            "roost",
+            "natural-gift",
+            "tailwind",
+            "u-turn",
+            "air-slash",
+            "bug-buzz",
+            "energy-ball",
+            "giga-impact",
+            "defog",
+            "captivate",
+            "bug-bite",
+            "ominous-wind",
+            "venoshock",
+            "rage-powder",
+            "quiver-dance",
+            "round",
+            "acrobatics",
+            "struggle-bug",
+            "electroweb",
+            "hurricane",
+            "draining-kiss",
+            "confide",
+            "infestation",
+            "pollen-puff",
+            "dual-wingbeat"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/12.png"
+        }
+    },
+    {
+        "id": 13,
+        "weight": 32,
+        "height": 3,
+        "name": "weedle",
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "abilities": [
+            "shield-dust",
+            "run-away"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 40
+            },
+            {
+                "name": "attack",
+                "base_stat": 35
+            },
+            {
+                "name": "defense",
+                "base_stat": 30
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 20
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 20
+            },
+            {
+                "name": "speed",
+                "base_stat": 50
+            }
+        ],
+        "moves": [
+            "poison-sting",
+            "string-shot",
+            "bug-bite",
+            "electroweb"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/13.png"
+        }
+    },
+    {
+        "id": 14,
+        "weight": 100,
+        "height": 6,
+        "name": "kakuna",
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "abilities": [
+            "shed-skin"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 45
+            },
+            {
+                "name": "attack",
+                "base_stat": 25
+            },
+            {
+                "name": "defense",
+                "base_stat": 50
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 25
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 25
+            },
+            {
+                "name": "speed",
+                "base_stat": 35
+            }
+        ],
+        "moves": [
+            "string-shot",
+            "harden",
+            "iron-defense",
+            "bug-bite",
+            "electroweb"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/14.png"
+        }
+    },
+    {
+        "id": 15,
+        "weight": 295,
+        "height": 10,
+        "name": "beedrill",
+        "types": [
+            "bug",
+            "poison"
+        ],
+        "abilities": [
+            "swarm",
+            "sniper"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 65
+            },
+            {
+                "name": "attack",
+                "base_stat": 90
+            },
+            {
+                "name": "defense",
+                "base_stat": 40
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 45
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 80
+            },
+            {
+                "name": "speed",
+                "base_stat": 75
+            }
+        ],
+        "moves": [
+            "swords-dance",
+            "cut",
+            "headbutt",
+            "fury-attack",
+            "take-down",
+            "double-edge",
+            "twineedle",
+            "pin-missile",
+            "hyper-beam",
+            "peck",
+            "mega-drain",
+            "solar-beam",
+            "string-shot",
+            "toxic",
+            "agility",
+            "rage",
+            "mimic",
+            "double-team",
+            "reflect",
+            "focus-energy",
+            "bide",
+            "swift",
+            "skull-bash",
+            "flash",
+            "rest",
+            "substitute",
+            "thief",
+            "snore",
+            "curse",
+            "protect",
+            "sludge-bomb",
+            "outrage",
+            "giga-drain",
+            "endure",
+            "false-swipe",
+            "swagger",
+            "fury-cutter",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "pursuit",
+            "sweet-scent",
+            "hidden-power",
+            "sunny-day",
+            "rock-smash",
+            "facade",
+            "brick-break",
+            "knock-off",
+            "endeavor",
+            "secret-power",
+            "air-cutter",
+            "silver-wind",
+            "aerial-ace",
+            "roost",
+            "natural-gift",
+            "tailwind",
+            "u-turn",
+            "payback",
+            "assurance",
+            "toxic-spikes",
+            "poison-jab",
+            "x-scissor",
+            "giga-impact",
+            "defog",
+            "captivate",
+            "bug-bite",
+            "ominous-wind",
+            "venoshock",
+            "round",
+            "acrobatics",
+            "struggle-bug",
+            "electroweb",
+            "drill-run",
+            "fell-stinger",
+            "confide",
+            "infestation",
+            "laser-focus",
+            "throat-chop",
+            "brutal-swing"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/15.png"
+        }
+    },
+    {
+        "id": 16,
+        "weight": 18,
+        "height": 3,
+        "name": "pidgey",
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "abilities": [
+            "keen-eye",
+            "tangled-feet",
+            "big-pecks"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 40
+            },
+            {
+                "name": "attack",
+                "base_stat": 45
+            },
+            {
+                "name": "defense",
+                "base_stat": 40
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 35
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 35
+            },
+            {
+                "name": "speed",
+                "base_stat": 56
+            }
+        ],
+        "moves": [
+            "razor-wind",
+            "gust",
+            "wing-attack",
+            "whirlwind",
+            "fly",
+            "sand-attack",
+            "headbutt",
+            "tackle",
+            "take-down",
+            "double-edge",
+            "toxic",
+            "agility",
+            "quick-attack",
+            "rage",
+            "mimic",
+            "double-team",
+            "reflect",
+            "bide",
+            "mirror-move",
+            "swift",
+            "sky-attack",
+            "rest",
+            "substitute",
+            "thief",
+            "snore",
+            "curse",
+            "protect",
+            "feint-attack",
+            "mud-slap",
+            "foresight",
+            "detect",
+            "endure",
+            "swagger",
+            "steel-wing",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "pursuit",
+            "hidden-power",
+            "twister",
+            "rain-dance",
+            "sunny-day",
+            "uproar",
+            "heat-wave",
+            "facade",
+            "secret-power",
+            "feather-dance",
+            "air-cutter",
+            "aerial-ace",
+            "roost",
+            "natural-gift",
+            "pluck",
+            "tailwind",
+            "u-turn",
+            "air-slash",
+            "brave-bird",
+            "defog",
+            "captivate",
+            "ominous-wind",
+            "round",
+            "work-up",
+            "hurricane",
+            "confide"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/16.png"
+        }
+    },
+    {
+        "id": 17,
+        "weight": 300,
+        "height": 11,
+        "name": "pidgeotto",
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "abilities": [
+            "keen-eye",
+            "tangled-feet",
+            "big-pecks"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 63
+            },
+            {
+                "name": "attack",
+                "base_stat": 60
+            },
+            {
+                "name": "defense",
+                "base_stat": 55
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 50
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 50
+            },
+            {
+                "name": "speed",
+                "base_stat": 71
+            }
+        ],
+        "moves": [
+            "razor-wind",
+            "gust",
+            "wing-attack",
+            "whirlwind",
+            "fly",
+            "sand-attack",
+            "headbutt",
+            "tackle",
+            "take-down",
+            "double-edge",
+            "toxic",
+            "agility",
+            "quick-attack",
+            "rage",
+            "mimic",
+            "double-team",
+            "reflect",
+            "bide",
+            "mirror-move",
+            "swift",
+            "sky-attack",
+            "rest",
+            "substitute",
+            "thief",
+            "snore",
+            "curse",
+            "protect",
+            "mud-slap",
+            "detect",
+            "endure",
+            "swagger",
+            "steel-wing",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "hidden-power",
+            "twister",
+            "rain-dance",
+            "sunny-day",
+            "uproar",
+            "heat-wave",
+            "facade",
+            "secret-power",
+            "feather-dance",
+            "air-cutter",
+            "aerial-ace",
+            "roost",
+            "natural-gift",
+            "pluck",
+            "tailwind",
+            "u-turn",
+            "air-slash",
+            "defog",
+            "captivate",
+            "ominous-wind",
+            "round",
+            "work-up",
+            "hurricane",
+            "confide"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/17.png"
+        }
+    },
+    {
+        "id": 18,
+        "weight": 395,
+        "height": 15,
+        "name": "pidgeot",
+        "types": [
+            "normal",
+            "flying"
+        ],
+        "abilities": [
+            "keen-eye",
+            "tangled-feet",
+            "big-pecks"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 83
+            },
+            {
+                "name": "attack",
+                "base_stat": 80
+            },
+            {
+                "name": "defense",
+                "base_stat": 75
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 70
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 70
+            },
+            {
+                "name": "speed",
+                "base_stat": 101
+            }
+        ],
+        "moves": [
+            "razor-wind",
+            "gust",
+            "wing-attack",
+            "whirlwind",
+            "fly",
+            "sand-attack",
+            "headbutt",
+            "tackle",
+            "take-down",
+            "double-edge",
+            "hyper-beam",
+            "toxic",
+            "agility",
+            "quick-attack",
+            "rage",
+            "mimic",
+            "double-team",
+            "reflect",
+            "bide",
+            "mirror-move",
+            "swift",
+            "sky-attack",
+            "rest",
+            "substitute",
+            "thief",
+            "snore",
+            "curse",
+            "protect",
+            "mud-slap",
+            "detect",
+            "endure",
+            "swagger",
+            "steel-wing",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "hidden-power",
+            "twister",
+            "rain-dance",
+            "sunny-day",
+            "uproar",
+            "heat-wave",
+            "facade",
+            "secret-power",
+            "feather-dance",
+            "air-cutter",
+            "aerial-ace",
+            "roost",
+            "natural-gift",
+            "pluck",
+            "tailwind",
+            "u-turn",
+            "air-slash",
+            "giga-impact",
+            "defog",
+            "captivate",
+            "ominous-wind",
+            "round",
+            "work-up",
+            "hurricane",
+            "confide",
+            "laser-focus"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/18.png"
+        }
+    },
+    {
+        "id": 19,
+        "weight": 35,
+        "height": 3,
+        "name": "rattata",
+        "types": [
+            "normal"
+        ],
+        "abilities": [
+            "run-away",
+            "guts",
+            "hustle"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 30
+            },
+            {
+                "name": "attack",
+                "base_stat": 56
+            },
+            {
+                "name": "defense",
+                "base_stat": 35
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 25
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 35
+            },
+            {
+                "name": "speed",
+                "base_stat": 72
+            }
+        ],
+        "moves": [
+            "cut",
+            "headbutt",
+            "tackle",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "tail-whip",
+            "bite",
+            "water-gun",
+            "ice-beam",
+            "blizzard",
+            "bubble-beam",
+            "counter",
+            "thunderbolt",
+            "thunder-wave",
+            "thunder",
+            "dig",
+            "toxic",
+            "quick-attack",
+            "rage",
+            "mimic",
+            "screech",
+            "double-team",
+            "defense-curl",
+            "focus-energy",
+            "bide",
+            "swift",
+            "skull-bash",
+            "fury-swipes",
+            "rest",
+            "hyper-fang",
+            "super-fang",
+            "substitute",
+            "thief",
+            "flame-wheel",
+            "snore",
+            "curse",
+            "reversal",
+            "protect",
+            "mud-slap",
+            "icy-wind",
+            "endure",
+            "swagger",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "pursuit",
+            "iron-tail",
+            "hidden-power",
+            "rain-dance",
+            "sunny-day",
+            "crunch",
+            "shadow-ball",
+            "rock-smash",
+            "uproar",
+            "facade",
+            "taunt",
+            "revenge",
+            "endeavor",
+            "secret-power",
+            "covet",
+            "shock-wave",
+            "natural-gift",
+            "pluck",
+            "u-turn",
+            "assurance",
+            "me-first",
+            "last-resort",
+            "sucker-punch",
+            "zen-headbutt",
+            "captivate",
+            "grass-knot",
+            "charge-beam",
+            "round",
+            "retaliate",
+            "final-gambit",
+            "work-up",
+            "wild-charge",
+            "confide"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/19.png"
+        }
+    },
+    {
+        "id": 20,
+        "weight": 185,
+        "height": 7,
+        "name": "raticate",
+        "types": [
+            "normal"
+        ],
+        "abilities": [
+            "run-away",
+            "guts",
+            "hustle"
+        ],
+        "stats": [
+            {
+                "name": "hp",
+                "base_stat": 55
+            },
+            {
+                "name": "attack",
+                "base_stat": 81
+            },
+            {
+                "name": "defense",
+                "base_stat": 60
+            },
+            {
+                "name": "special-attack",
+                "base_stat": 50
+            },
+            {
+                "name": "special-defense",
+                "base_stat": 70
+            },
+            {
+                "name": "speed",
+                "base_stat": 97
+            }
+        ],
+        "moves": [
+            "swords-dance",
+            "cut",
+            "headbutt",
+            "tackle",
+            "body-slam",
+            "take-down",
+            "double-edge",
+            "tail-whip",
+            "bite",
+            "roar",
+            "water-gun",
+            "ice-beam",
+            "blizzard",
+            "bubble-beam",
+            "hyper-beam",
+            "counter",
+            "strength",
+            "thunderbolt",
+            "thunder-wave",
+            "thunder",
+            "dig",
+            "toxic",
+            "quick-attack",
+            "rage",
+            "mimic",
+            "double-team",
+            "defense-curl",
+            "focus-energy",
+            "bide",
+            "swift",
+            "skull-bash",
+            "fury-swipes",
+            "rest",
+            "hyper-fang",
+            "super-fang",
+            "substitute",
+            "thief",
+            "snore",
+            "curse",
+            "protect",
+            "scary-face",
+            "mud-slap",
+            "icy-wind",
+            "endure",
+            "swagger",
+            "attract",
+            "sleep-talk",
+            "return",
+            "frustration",
+            "pursuit",
+            "iron-tail",
+            "hidden-power",
+            "rain-dance",
+            "sunny-day",
+            "crunch",
+            "shadow-ball",
+            "rock-smash",
+            "uproar",
+            "facade",
+            "taunt",
+            "endeavor",
+            "secret-power",
+            "covet",
+            "shock-wave",
+            "natural-gift",
+            "pluck",
+            "u-turn",
+            "assurance",
+            "last-resort",
+            "sucker-punch",
+            "giga-impact",
+            "zen-headbutt",
+            "captivate",
+            "grass-knot",
+            "charge-beam",
+            "round",
+            "retaliate",
+            "work-up",
+            "wild-charge",
+            "confide",
+            "throat-chop",
+            "stomping-tantrum"
+        ],
+        "sprites": {
+            "default": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+            "shiny": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/20.png"
+        }
+    }
+]
