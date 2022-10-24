@@ -42,11 +42,11 @@ export default function Pokedex() {
    * DONE 18. Use correct Pokemon font
    * DONE (NR) 19. Capitalise the Pokemon names, moves, abilities when storing data. Remove any '-'
    * DONE 20. Navbar brand navigates to home page
-   * 21. Create home page 
+   * DONE 21. Create home page 
    * DONE 22. Take only necessary information from API (e.g. moves -> only need moves.name)
    * 23. Convert custom CSS to bootstrap (height: 100% -> h-100)
    * DONE (NR) 24. NavBar Brand Logo: combine React and Pokeball
-   * 25. On API Error -> Show button 'Load Dummy Data' -> Shows dummy data
+   * DONE 25. On API Error -> Show button 'Load Dummy Data' -> Shows dummy data
    * 26. Placeholder sprites if sprite is null (when cleaning data -> sprite ? sprite : ./localimg )
    * 27. BUG - resetting list of pokemon on reload of component (i.e. not saving state)
    * 28. Add Spinner when loading next pokemon on infinite scroll

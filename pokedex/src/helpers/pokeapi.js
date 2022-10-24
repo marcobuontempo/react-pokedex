@@ -1,7 +1,7 @@
 import axios from "axios"
+const placeholder_sprite = "/images/placeholder_sprite.png"
 
 const POKEAPI_URL = "https://pokeapi.co/api/v2/"
-
 let pokemonURL = POKEAPI_URL + "pokemon"
 
 const resetURL = () => {
@@ -24,7 +24,7 @@ const fetchOnePokemonData = async (pokemon) => {
         abilities: pokemonInfo.abilities.map(el => el.ability.name),
         stats: pokemonInfo.stats.map(el => { return {name: el.stat.name, base_stat: el.base_stat}}),
         moves: pokemonInfo.moves.map(el => el.move.name),
-        sprites: { default: pokemonInfo.sprites.front_default, shiny: pokemonInfo.sprites.front_shiny }
+        sprites: { default: pokemonInfo.sprites.front_default || placeholder_sprite, shiny: pokemonInfo.sprites.front_shiny || placeholder_sprite }
       }
     })
   return pokemonData
