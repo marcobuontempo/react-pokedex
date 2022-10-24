@@ -29,7 +29,8 @@ export default function Pokedex() {
    *     - DONE Hover animation (scale/glow) on cards
    *     - Custom scroll bars
    *     - PokemonDisplay styling (font, navlist, etc...)
-   * 11. Add About section
+   *     - Breathing animation for pokemon sprite on displaycard
+   * DONE 11. Add About section
    * DONE 12. Separate styling into .css sheets
    * DONE 13. Extract API calls into helper function at /helpers/api.js
    * DONE 15. Only set pokemonData after pokemon from list have been added
@@ -45,6 +46,9 @@ export default function Pokedex() {
    * 23. Convert custom CSS to bootstrap (height: 100% -> h-100)
    * 24. NavBar Brand Logo: combine React and Pokeball
    * 25. On API Error -> Show button 'Load Dummy Data' -> Shows dummy data
+   * 26. Placeholder sprites if sprite is null (when cleaning data -> sprite ? sprite : ./localimg )
+   * 27. BUG - resetting list of pokemon on reload of component (i.e. not saving state)
+   * 28. Add Spinner when loading next pokemon on infinite scroll
    */
 
   const [menuSelected, setMenuSelected] = useState(null)
@@ -52,9 +56,9 @@ export default function Pokedex() {
   const getDisplayContent = (displayType) => {
     switch (displayType) {
       case "PokemonList":
-        return <PokemonList></PokemonList>
+        return <PokemonList />
       case "About":
-        return <About></About>
+        return <About />
       default:
         return
     }
