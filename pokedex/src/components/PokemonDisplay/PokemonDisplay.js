@@ -77,7 +77,7 @@ export default function PokemonDisplay(props) {
 		<Card bg='light' className='PokemonDisplay'>
 			<Button variant="outline-danger" size="sm" className='PokemonDisplay-back-button' onClick={goBack}>Back</Button>
 
-			<Card.Title as='h1' className="text-center pt-2">{pokemon.name.toUpperCase()}</Card.Title>
+			<Card.Title as='h1' className="text-center pt-2 poke-font">{pokemon.name}</Card.Title>
 			<Stack direction='horizontal' className='PokemonDisplay-img-container justify-content-center'>
 				<Card.Img variant="top" src={pokemon.sprites.default} className='PokemonDisplay-img' onMouseEnter={togglePokemonImage} onMouseLeave={togglePokemonImage} />
 			</Stack>

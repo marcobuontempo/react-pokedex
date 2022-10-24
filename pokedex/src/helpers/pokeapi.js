@@ -4,6 +4,10 @@ const POKEAPI_URL = "https://pokeapi.co/api/v2/"
 
 let pokemonURL = POKEAPI_URL + "pokemon"
 
+const resetURL = () => {
+  pokemonURL = POKEAPI_URL + "pokemon"
+}
+
 const fetchOnePokemonData = async (pokemon) => {
   const pokemonData = await axios
     .get(pokemon.url)
@@ -47,7 +51,6 @@ const fetchAllPokemonData = async (url) => {
     })
 
   // console.log(allPokemonData)
-
   return allPokemonData
 }
 
@@ -61,4 +64,4 @@ const fetchAllPokemonData = async (url) => {
 // onload -> check objarr in localStorage: if timeupdate>30days or empty: recall function
 // pull localStorage info and assign to local obh arr
 
-export { pokemonURL, fetchAllPokemonData }
+export { pokemonURL, resetURL, fetchAllPokemonData }

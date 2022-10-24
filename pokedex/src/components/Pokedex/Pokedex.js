@@ -45,7 +45,7 @@ export default function Pokedex() {
    * 21. Create home page 
    * DONE 22. Take only necessary information from API (e.g. moves -> only need moves.name)
    * 23. Convert custom CSS to bootstrap (height: 100% -> h-100)
-   * 24. NavBar Brand Logo: combine React and Pokeball
+   * DONE (NR) 24. NavBar Brand Logo: combine React and Pokeball
    * 25. On API Error -> Show button 'Load Dummy Data' -> Shows dummy data
    * 26. Placeholder sprites if sprite is null (when cleaning data -> sprite ? sprite : ./localimg )
    * 27. BUG - resetting list of pokemon on reload of component (i.e. not saving state)
@@ -57,25 +57,19 @@ export default function Pokedex() {
   const getDisplayContent = (displayType) => {
     switch (displayType) {
       case "Home":
-        return <Home />
+        return <Home setMenuSelected={setMenuSelected} />
       case "PokemonList":
         return <PokemonList />
       case "About":
         return <About />
       default:
-        return
+        return <Home setMenuSelected={setMenuSelected} />
     }
-  }
-
-  const test = async () => {
-    const abc = await pokeapi.fetchAllPokemonData(pokeapi.pokemonURL)
-    console.log(abc)
   }
 
   return (
     <Stack className='Pokedex'>
       <NavBar setMenuSelected={setMenuSelected}></NavBar>
-      {/* <button type="button" onClick={test}>Test</button> */}
       <Container fluid className="overflow-auto Pokedex-container p-0">
         {getDisplayContent(menuSelected)}
       </Container>

@@ -5,6 +5,7 @@ import './PokemonList.css'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Spinner from 'react-bootstrap/Spinner';
+import Button from 'react-bootstrap/Button';
 
 import PokemonListCard from '../PokemonListCard/PokemonListCard';
 import PokemonDisplay from '../PokemonDisplay/PokemonDisplay';
@@ -18,7 +19,7 @@ export default function PokemonList() {
 
 	const infiniteScroll = (e) => {
 		e.preventDefault()
-		if(e.target.scrollTop + e.target.offsetHeight >= e.target.scrollHeight) {
+		if (!APIError && (e.target.scrollTop + e.target.offsetHeight >= e.target.scrollHeight)) {
 			getPokemonData()
 		}
 	}
@@ -40,8 +41,19 @@ export default function PokemonList() {
 		// localStorage.setItem("pokemon_data", JSON.stringify(storageData))
 	}
 
+	const loadDummyData = () => {
+		const dummyData = require("../../dummy_data/pokemon_list_dummy.json")
+		setPokemonData(dummyData)
+	}
+
 	useEffect(() => {
+		//on component mount
 		getPokemonData()
+
+		//on component un-mount
+		return () => {
+			pokeapi.resetURL()
+		}
 	}, [])
 
 	const selectPokemon = (pokemon) => {
@@ -52,16 +64,25 @@ export default function PokemonList() {
 		<>
 			<Container className='overflow-auto py-3 PokemonList-container' fluid onScroll={infiniteScroll}>
 				{/* Loading "spinner" when pokemonData is empty */}
-				{pokemonData.length === 0 ? (
-					<div className='PokemonList-spinner'>
-						<Spinner animation="border" role="status" variant="danger">
-							<span className="visually-hidden">Loading...</span>
-						</Spinner>
-					</div>)
-					: null}
+				{pokemonData.length === 0 && !APIError &&
+					(
+						<div className='PokemonList-spinner'>
+							<Spinner animation="border" role="status" variant="danger">
+								<span className="visually-hidden">Loading...</span>
+							</Spinner>
+						</div>
+					)
+				}
 
 				{/* API Error */}
-				{/* {APIError ? <span>API ERROR</span> : null} */}
+				{pokemonData.length === 0 && APIError &&
+					(
+						<div className='text-center p-5'>
+							<h1 className="display-4">API ERROR</h1>
+							<Button variant="outline-warning" className="px-5" onClick={loadDummyData}>Load Dummy Data...</Button>
+						</div>
+					)
+				}
 				{/* Render contents in separate function */}
 
 				{/* Display each pokemon in the list */}
