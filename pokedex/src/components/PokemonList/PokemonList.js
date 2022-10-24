@@ -15,11 +15,13 @@ import * as pokeapi from '../../helpers/pokeapi'
 export default function PokemonList() {
 	const [selectedPokemon, setSelectedPokemon] = useState(null);
 	const [pokemonData, setPokemonData] = useState([]);
+	const [isFetching, setIsFetching] = useState(true);
 	const [APIError, setAPIError] = useState(false);
 
 	const infiniteScroll = (e) => {
 		e.preventDefault()
 		if (!APIError && (e.target.scrollTop + e.target.offsetHeight >= e.target.scrollHeight)) {
+			setIsFetching(true)
 			getPokemonData()
 		}
 	}
@@ -28,6 +30,7 @@ export default function PokemonList() {
 		try {
 			const pokemonArr = await pokeapi.fetchAllPokemonData(pokeapi.pokemonURL)
 			setPokemonData([...pokemonData, ...pokemonArr])
+			setIsFetching(false)
 		}
 		catch (err) {
 			setAPIError(true)
@@ -44,6 +47,7 @@ export default function PokemonList() {
 	const loadDummyData = () => {
 		const dummyData = require("../../dummy_data/pokemon_list_dummy.json")
 		setPokemonData(dummyData)
+		setIsFetching(false)
 	}
 
 	useEffect(() => {
@@ -63,19 +67,8 @@ export default function PokemonList() {
 	return (
 		<>
 			<Container className='overflow-auto py-3 PokemonList-container' fluid onScroll={infiniteScroll}>
-				{/* Loading "spinner" when pokemonData is empty */}
-				{pokemonData.length === 0 && !APIError &&
-					(
-						<div className='PokemonList-spinner'>
-							<Spinner animation="border" role="status" variant="danger">
-								<span className="visually-hidden">Loading...</span>
-							</Spinner>
-						</div>
-					)
-				}
-
-				{/* API Error */}
-				{pokemonData.length === 0 && APIError &&
+				{/* Display if API Error */}
+				{isFetching && APIError &&
 					(
 						<div className='text-center p-5'>
 							<h1 className="display-4">API ERROR</h1>
@@ -83,12 +76,24 @@ export default function PokemonList() {
 						</div>
 					)
 				}
-				{/* Render contents in separate function */}
 
-				{/* Display each pokemon in the list */}
+				{/* Display each pokemon card in the list */}
 				<Row className='justify-content-evenly gap-2' >
 					{pokemonData.map(pokemon => <PokemonListCard key={pokemon.id} pokemon={pokemon} selectPokemon={selectPokemon}></PokemonListCard>)}
 				</Row>
+
+
+				{/* Loading "spinner" when fetching data */}
+				{isFetching && !APIError &&
+					(
+						<div className={"PokemonList-spinner p-3" + (pokemonData.length===0 ? " PokemonList-unloaded" : " ")}>
+							<Spinner animation="border" role="status" variant="danger">
+								<span className="visually-hidden">Loading...</span>
+							</Spinner>
+						</div>
+					)
+				}
+
 			</Container>
 
 			{/* Display the overlay card when pokemon selected */}

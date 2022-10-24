@@ -50,18 +50,7 @@ const fetchAllPokemonData = async (url) => {
       return err
     })
 
-  // console.log(allPokemonData)
   return allPokemonData
 }
-
-// get 20 Pokemon {name,url} 
-// -> put into array 
-// -> foreach pokemon, use url to request pokemon data 
-// -> push each pokemondata into obj arr {timeupdate:xx, pokemon:[]}
-// -> load array from objarr
-// -> when bottom scroll reached, recall initial function ^
-
-// onload -> check objarr in localStorage: if timeupdate>30days or empty: recall function
-// pull localStorage info and assign to local obh arr
 
 export { pokemonURL, resetURL, fetchAllPokemonData }
