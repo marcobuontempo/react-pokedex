@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@import url("//fonts.cdnfonts.com/css/pokemon-solid");
 .poke-font {
   font-family: 'Pokemon Solid', sans-serif !important;
 }
