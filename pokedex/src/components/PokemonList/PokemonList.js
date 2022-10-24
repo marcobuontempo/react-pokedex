@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-
 import './PokemonList.css'
 
 import Container from 'react-bootstrap/Container';
@@ -9,6 +8,8 @@ import Button from 'react-bootstrap/Button';
 
 import PokemonListCard from '../PokemonListCard/PokemonListCard';
 import PokemonDisplay from '../PokemonDisplay/PokemonDisplay';
+
+import axios from 'axios';
 
 import * as pokeapi from '../../helpers/pokeapi'
 
@@ -37,9 +38,9 @@ export default function PokemonList() {
 		}
 	}
 
-	const loadDummyData = () => {
-		const dummyData = require("../../dummy_data/pokemon_list_dummy.json")
-		setPokemonData(dummyData)
+	const loadDummyData = async () => {
+		const { data } = await axios.get("dummy_data/pokemon_list_dummy.json")
+		setPokemonData(data)
 		setIsFetching(false)
 	}
 
@@ -79,7 +80,7 @@ export default function PokemonList() {
 				{/* Loading "spinner" when fetching data */}
 				{isFetching && !APIError &&
 					(
-						<div className={"PokemonList-spinner p-3" + (pokemonData.length===0 ? " PokemonList-unloaded" : " ")}>
+						<div className={"PokemonList-spinner p-3" + (pokemonData.length === 0 ? " PokemonList-unloaded" : " ")}>
 							<Spinner animation="border" role="status" variant="danger">
 								<span className="visually-hidden">Loading...</span>
 							</Spinner>
