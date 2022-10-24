@@ -34,7 +34,6 @@ const fetchAllPokemonData = async (url) => {
   const allPokemonData = await axios
     .get(url)
     .then(res => {
-      // console.log(res);
       return res.data;
     })
     .then(data => {

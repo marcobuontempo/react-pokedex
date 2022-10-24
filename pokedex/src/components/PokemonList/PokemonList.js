@@ -35,13 +35,6 @@ export default function PokemonList() {
 		catch (err) {
 			setAPIError(true)
 		}
-
-		// const storageData = {
-		// 	date_set: new Date(),
-		// 	pokemon_data: pokemonData
-		// }
-
-		// localStorage.setItem("pokemon_data", JSON.stringify(storageData))
 	}
 
 	const loadDummyData = () => {

@@ -30,7 +30,7 @@ export default function NavBar(props) {
 					</Offcanvas.Header>
 					<Offcanvas.Body>
 						<Nav className="justify-content-end flex-grow-1 pe-3 gap-2" onSelect={selectMenuItem}>
-							<Nav.Item key='Home'><Nav.Link as="button" href='Home' className='w-100 btn btn-success text-light'>Home</Nav.Link></Nav.Item>
+							<Nav.Item key='Home'><Nav.Link as="button" href='Home' className='w-100 btn btn-dark text-light'>Home</Nav.Link></Nav.Item>
 							<Nav.Item key='PokemonList'><Nav.Link as="button" href='PokemonList' className='w-100 btn btn-danger text-light'>Pokemon</Nav.Link></Nav.Item>
 							<Nav.Item key='About'><Nav.Link as="button" href='About' className='w-100 btn btn-primary text-light'>About</Nav.Link></Nav.Item>
 						</Nav>
