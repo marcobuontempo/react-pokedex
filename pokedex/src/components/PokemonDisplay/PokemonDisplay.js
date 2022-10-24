@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 
+
 import './PokemonDisplay.css'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
@@ -31,7 +32,7 @@ export default function PokemonDisplay(props) {
 	const getNavbar = (navItems) => {
 		return (
 			<Nav variant="tabs" defaultActiveKey={navItems[0].toLowerCase()} onSelect={changeDisplay} className="justify-content-center">
-				{navItems.map(e => <Nav.Item key={e.toLowerCase()}><Nav.Link as="button" href={e.toLowerCase()}>{e}</Nav.Link></Nav.Item>)}
+				{navItems.map(e => <Nav.Item key={e.toLowerCase()}><Nav.Link as="button" href={e.toLowerCase()} className="PokemonDisplay-nav-link">{e}</Nav.Link></Nav.Item>)}
 			</Nav>
 		)
 	}
@@ -41,11 +42,11 @@ export default function PokemonDisplay(props) {
 			case "overview":
 				return (<>
 					<ListGroup>
-						<ListGroup.Item className='fw-bold'>Type:</ListGroup.Item>
+						<ListGroup.Item className='fw-bold'>TYPE:</ListGroup.Item>
 						{pokemon.types.map(type => <ListGroup.Item key={type}>{type}</ListGroup.Item>)}
 					</ListGroup>
 					<ListGroup>
-						<ListGroup.Item className='fw-bold'>Abilities:</ListGroup.Item>
+						<ListGroup.Item className='fw-bold'>ABILITIES:</ListGroup.Item>
 						{pokemon.abilities.map(ability => <ListGroup.Item key={ability}>{ability}</ListGroup.Item>)}
 					</ListGroup>
 				</>)
@@ -58,14 +59,14 @@ export default function PokemonDisplay(props) {
 			case "moves":
 				return (
 					<ListGroup>
-						<li className="list-group-item fw-bold">Moves:</li>
+						<li className="list-group-item fw-bold">MOVES:</li>
 						{pokemon.moves.map(move => <ListGroup.Item className="fw-bold" key={move}><span className='fw-normal'>{move}</span></ListGroup.Item>)}
 					</ListGroup>)
 			case "physical":
 				return (
 					<ListGroup>
-						<ListGroup.Item className="fw-bold">Height: <span className="fw-normal">{pokemon.height} metres</span></ListGroup.Item>
-						<ListGroup.Item className="fw-bold">Weight: <span className="fw-normal">{pokemon.weight} kilograms</span></ListGroup.Item>
+						<ListGroup.Item className="fw-bold">HEIGHT: <span className="fw-normal">{pokemon.height} metres</span></ListGroup.Item>
+						<ListGroup.Item className="fw-bold">WEIGHT: <span className="fw-normal">{pokemon.weight} kilograms</span></ListGroup.Item>
 					</ListGroup>)
 			default:
 				return <p className='text-center text-error'>ERROR</p>
@@ -76,7 +77,7 @@ export default function PokemonDisplay(props) {
 		<Card bg='light' className='PokemonDisplay'>
 			<Button variant="outline-danger" size="sm" className='PokemonDisplay-back-button' onClick={goBack}>Back</Button>
 
-			<Card.Title as='h1' className="text-center pt-2">{pokemon.name}</Card.Title>
+			<Card.Title as='h1' className="text-center pt-2">{pokemon.name.toUpperCase()}</Card.Title>
 			<Stack direction='horizontal' className='PokemonDisplay-img-container justify-content-center'>
 				<Card.Img variant="top" src={pokemon.sprites.default} className='PokemonDisplay-img' onMouseEnter={togglePokemonImage} onMouseLeave={togglePokemonImage} />
 			</Stack>

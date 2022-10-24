@@ -1,4 +1,3 @@
-// import axios from 'axios'
 import axios from "axios"
 
 const POKEAPI_URL = "https://pokeapi.co/api/v2/"

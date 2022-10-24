@@ -26,3 +26,11 @@
     object-fit: contain;
     cursor: url(star-cursor.png),auto;
 }
+
+.PokemonDisplay-nav-link {
+    color: brown;
+}
+
+.PokemonDisplay-nav-link:hover {
+    color: goldenrod;
+}

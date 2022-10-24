@@ -35,7 +35,7 @@ export default function NavBar(props) {
 						</Nav>
 					</Offcanvas.Body>
 				</Navbar.Offcanvas>
-				<Navbar.Brand className="poke-font">Pokedex</Navbar.Brand>
+				<Navbar.Brand className="poke-font NavBar-logo" onClick={() => selectMenuItem("Home")}>Pokedex</Navbar.Brand>
 			</Container>
 		</Navbar>
 		)

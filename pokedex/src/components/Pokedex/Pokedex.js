@@ -8,6 +8,7 @@ import NavBar from '../NavBar/NavBar';
 import About from '../About/About';
 
 import * as pokeapi from '../../helpers/pokeapi.js'
+import Home from '../Home/Home';
 
 
 export default function Pokedex() {
@@ -39,8 +40,8 @@ export default function Pokedex() {
    * DONE 16. Get each PokemonListCard to have background colour matching the Pokemon's colour (background image size 9999..)
    * DONE 17. Show shiny sprite on mouse hover
    * DONE 18. Use correct Pokemon font
-   * 19. Capitalise the Pokemon names, moves, abilities when storing data. Remove any '-'
-   * 20. Navbar brand navigates to home page
+   * DONE (NR) 19. Capitalise the Pokemon names, moves, abilities when storing data. Remove any '-'
+   * DONE 20. Navbar brand navigates to home page
    * 21. Create home page 
    * DONE 22. Take only necessary information from API (e.g. moves -> only need moves.name)
    * 23. Convert custom CSS to bootstrap (height: 100% -> h-100)
@@ -55,6 +56,8 @@ export default function Pokedex() {
 
   const getDisplayContent = (displayType) => {
     switch (displayType) {
+      case "Home":
+        return <Home />
       case "PokemonList":
         return <PokemonList />
       case "About":
