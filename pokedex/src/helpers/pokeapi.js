@@ -17,8 +17,8 @@ const fetchOnePokemonData = async (pokemon) => {
     .then(pokemonInfo => {
       return {
         id: pokemonInfo.id,
-        weight: pokemonInfo.weight,
-        height: pokemonInfo.height,
+        weight: pokemonInfo.weight/10,
+        height: pokemonInfo.height/10,
         name: pokemonInfo.name,
         types: pokemonInfo.types.map(el => el.type.name),
         abilities: pokemonInfo.abilities.map(el => el.ability.name),
