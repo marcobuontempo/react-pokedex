@@ -1,7 +1,6 @@
 # React Pokedex
 [VIEW THE LIVE DEPLOYMENT HERE](https://marcobuontempo.github.io/react-pokedex/)
 </br>
-</br>
 
 # Description
 - A front-end user interface for users to explore data about Pokemon, as serviced by [PokeAPI](https://pokeapi.co/)
@@ -13,7 +12,6 @@
     - axios
     - gh-pages *(for deployment)*
 </br>
-</br>
 
 # Features
 - Fetches, cleans, and displays Pokemon data
@@ -23,7 +21,6 @@
 - Dynamic backgrounds for each Pokemon's card in the display list
 - When a Pokemon is selected *(i.e. clicked)*, users can explore the Pokemon's "Overview", "Stats", "Moves" and "Physical" details
 - Custom CSS animations for Pokemon sprites
-</br>
 </br>
 
 # Local Deployment
